@@ -1,0 +1,11 @@
+.default-btn {
+  border-radius: 30px;
+  color: $light;
+  border: none;
+  background: $default-blue;
+  box-shadow: 0 10px 10px transparentize($dark, 0.75);
+  width: 245px;
+  padding: 12px 0;
+  font-family: $default-font;
+  font-size: 36px;
+}
