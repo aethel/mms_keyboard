@@ -1,0 +1,19 @@
+/*general colours*/
+@dark : hsla(0,100%,0,1);
+@light : hsla(0,0,100%,1);
+/*background colours*/
+@default-blue : hsla(204%,87%,75%,1);
+@disabled : hsla(0,0,72%,1);
+@active-button : hsla(269%,100,12%,1);
+@default-icon : hsla(38%,72%,99%,1);
+@button-light-stop : hsla(47%,56%,99%,1);
+@button-dark-stop : hsla(47%,80%,95%,1);
+@preview-light-stop : hsla(0%,0%,98%,1);
+@preview-dark-stop : hsla(0%,0%,76%,1);
+/*text colours*/
+@disabled-text : hsla(0,0,50%,1);
+body {
+  background: green; }
+
+body {
+  background: yellow; }

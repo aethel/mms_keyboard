@@ -1,0 +1,32 @@
+{
+  "name": "mms_chinese_keyboard",
+  "version": "1.0.0",
+  "description": "chinese keyboard for MMs touch-panel customisation app ",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aethel/mms_keyboard.git"
+  },
+  "author": "Mariusz Pankiewicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aethel/mms_keyboard/issues"
+  },
+  "homepage": "https://github.com/aethel/mms_keyboard#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1",
+    "gulp-stylelint": "^2.0.2",
+    "stylelint-config-standard": "^7.0.0"
+  },
+	"stylelint":{
+		"extends": "stylelint-config-standard",
+		"rules":{
+			"unit-whitelist": ["em,rem,vx,vh"],
+      "no-invalid-double-slash-comments": false
+		}
+	}
+}
