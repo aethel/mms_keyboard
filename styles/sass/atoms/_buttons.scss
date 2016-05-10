@@ -27,8 +27,10 @@
 }
 
 .default-btn--half-left {
-  @extend .default-btn--half-right;
+  @extend %default-btn;
   border-radius: 50% 0 0 50%;
+  width: 133px;
+  height: 126px;
 }
 
 .default-btn--round {

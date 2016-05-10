@@ -1,0 +1,8 @@
+.main-header {
+  @include row();
+}
+  
+.main-header__heading {
+  @include column(6,8);
+  text-align: center;
+}

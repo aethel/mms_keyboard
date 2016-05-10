@@ -1,10 +1,17 @@
 @import 'utilities/reset';
 @import 'utilities/variables';
 @import 'utilities/mixins';
-//@import 'utilities/fgrid';
 
 @import 'atoms/_typography';
 @import 'atoms/_buttons';
 @import 'atoms/_grid';
 @import 'atoms/_typography';
 @import 'atoms/_headers';
+
+@import 'molecules/_main-header';
+
+
+/*OF SHAME*/
+.wrapper {
+  background: $default-blue;
+}
