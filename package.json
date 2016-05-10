@@ -25,7 +25,7 @@
 	"stylelint":{
 		"extends": "stylelint-config-standard",
 		"rules":{
-			"unit-whitelist": ["em", "rem", "vx", "vh", "%", "px"],
+			"unit-whitelist": ["em", "rem", "vx", "vh", "%", "px", "deg"],
       "selector-list-comma-newline-after": "never-multi-line"
 		}
 	}
