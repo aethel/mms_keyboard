@@ -1,19 +1,23 @@
 /* general colours */
-$dark: hsla(0, 100%, 0, 1);
-$light: hsla(0, 0, 100%, 1);
+$dark: #000;
+$light: #fff;
 
 /* background colours */
 $default-blue: #1b7fc0;
-$disabled: hsla(0, 0, 72%, 1);
-$active-button: hsla(269%, 100, 12%, 1);
+$disabled: #b8b8b8;
+$active-button: #57cd7f;
 $default-icon: hsla(38%, 72%, 99%, 1);
-$button-light-stop: hsla(47%, 56%, 99%, 1);
-$button-dark-stop: hsla(47%, 80%, 95%, 1);
+$button-light-stop: #ebcd5b;
+$button-dark-stop: #edc122;
+$button-personalise-light-stop: #fedf6f;
+$button-personalise-dark-stop: #f2c92f;
+$button-icon-light-stop: #ffffff;
+$button-icon-dark-stop: #d6d6d6;
 $preview-light-stop: hsla(0%, 0%, 98%, 1);
 $preview-dark-stop: hsla(0%, 0%, 76%, 1);
 
 /* text colours */
-$disabled-text: hsla(0, 0, 50%, 1);
+$disabled-text: #808080;
 
 /* fonts */
 @font-face {

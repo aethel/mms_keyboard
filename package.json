@@ -26,7 +26,7 @@
 		"extends": "stylelint-config-standard",
 		"rules":{
 			"unit-whitelist": ["em", "rem", "vx", "vh", "%", "px"],
-      "selector-list-comma-newline-after": false
+      "selector-list-comma-newline-after": "never-multi-line"
 		}
 	}
 }
