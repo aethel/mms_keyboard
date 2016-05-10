@@ -1,8 +1,8 @@
-.row{
+.row {
   @include row();
 }
 
 .column {
-  @include column(2, 8); 
-  background:pink;
+  @include column(2, 8);
+  background: pink;
 }

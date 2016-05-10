@@ -1,7 +1,8 @@
 .main-header {
   @include row();
+  margin:0 0 68px;
 }
-  
+
 .main-header__heading {
   @include column(6,8);
   text-align: center;

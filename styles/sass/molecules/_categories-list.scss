@@ -1,0 +1,31 @@
+.categories-list {
+  text-align: center;
+}
+
+.categories-list__item {
+  margin: 0 0 30px;
+}
+
+.categories-list__item--photo {
+  .btn--large-icon::after{
+    background-position: left center;  
+  }  
+}
+
+.categories-list__item--theme {
+  .btn--large-icon::after{
+    background-position: -111px center;
+  }
+}
+
+.categories-list__item--message {
+  .btn--large-icon::after{
+    background-position: -222px center;
+  }
+}
+
+.categories-list__item--sport {
+  .btn--large-icon::after{
+    background-position: -333px center;
+  }
+} 
