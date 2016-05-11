@@ -7,12 +7,21 @@
 @import 'atoms/_grid';
 @import 'atoms/_typography';
 @import 'atoms/_headers';
+@import 'atoms/_horizontal-list';
 
 @import 'molecules/_main-header';
 @import 'molecules/_categories-list';
+@import 'molecules/_previews-list';
+@import 'molecules/_preview-icon';
+@import 'molecules/_hero-image';
 
 
 /*OF SHAME*/
 .wrapper {
-  background: $default-blue;
+  background: url(../../images/main-background.png) no-repeat center top transparent;
+  padding-bottom: 44px;
+  
+  .btn--disabled {
+    margin: 0 auto;
+  }
 }

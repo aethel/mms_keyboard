@@ -75,7 +75,6 @@
   position: relative;
   &::before {
     content: '';
-    background: linear-gradient(-60deg, $button-icon-light-stop, $button-icon-dark-stop);
     display: inline-block;
     border-radius: 50%;
     width: 111px;
@@ -87,7 +86,6 @@
   }
   &::after {
     content: '';
-    background-image: url(../../../images/categoriesSprite.png);
     background-repeat: no-repeat;
     position: absolute;
     display: inline-block;
@@ -109,6 +107,7 @@
   border: none;
   text-transform: uppercase;
   font-family: $default-font;
+  display: block;
 }
 
 .btn--disabled__first-line {

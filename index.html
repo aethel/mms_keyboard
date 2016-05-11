@@ -8,6 +8,9 @@
   </head>
   <body>
     <div class="wrapper">
+      <figure class="hero-image">
+        <img src="images/red-character.png" alt="" class="hero-image__image">
+      </figure>
       <header class="main-header">
         <button class="default-btn--half-right">Chinese</button>
         <h1 class="main-header__heading">How do you want to personalise your M&amp;M's?</h1>      
@@ -15,19 +18,53 @@
       </header>
       <ul class="categories-list">
         <li class="categories-list__item categories-list__item--photo">
+          <span class="categories-list__intro">With your</span>
           <button class="btn--large-icon">Photo</button>
         </li>
         <li class="categories-list__item categories-list__item--theme">
+          <span class="categories-list__intro">With a special</span>
           <button class="btn--large-icon">Theme</button>
         </li>
         <li class="categories-list__item categories-list__item--message">
+          <span class="categories-list__intro">With a personal</span>
           <button class="btn--large-icon">Message</button>
         </li>
         <li class="categories-list__item categories-list__item--sport">
+          <span class="categories-list__intro">With your favourite</span>
           <button class="btn--large-icon">Sport</button>
         </li>
       </ul>
-
+      <section class="previews-list">
+        <header class="previews-list__header">
+          <h2>You can choose up to 4 designs</h2>
+        </header>
+        <ul class="horizontal-list">
+          <li class="horizontal-list__item">
+            <figure class="preview-icon">
+              <img src="/images/m-preview.png" alt="">
+            </figure>
+          </li>
+          <li class="horizontal-list__item">
+            <figure class="preview-icon">
+              <img src="/images/m-preview.png" alt="">
+            </figure>
+          </li>
+          <li class="horizontal-list__item">
+            <figure class="preview-icon">
+              <img src="/images/m-preview.png" alt="">
+            </figure>
+          </li>
+          <li class="horizontal-list__item">
+            <figure class="preview-icon">
+              <img src="/images/m-preview.png" alt="">
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <button class="btn--disabled">
+        <span class="btn--disabled__first-line">next step</span>
+        <span class="btn--disabled__second-line">select your cup</span>
+      </button>
     </div>
   </body>
 </html>
