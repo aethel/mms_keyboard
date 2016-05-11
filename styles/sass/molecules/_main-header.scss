@@ -1,6 +1,10 @@
 .main-header {
   @include row();
-  margin: 8px 0 68px;
+  margin: 4px 0 68px;
+  .default-btn--half-left {
+    position: relative;
+    right: -4px;
+  }
 }
 
 .main-header__heading {
@@ -12,5 +16,5 @@
     height: 1px;
     background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
     margin: 0 30px;
-  }
+  }    
 }
