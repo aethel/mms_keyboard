@@ -19,16 +19,17 @@
   position: absolute;
   font-size: 20px;
   color: $default-icon;
+  display: none;
 }
 
 .previews-list {
   .preview-icon .default-btn--micro:first-child {
-    top: 0;
-    right: 0;
+    top: -10px;
+    right: -10px;
   }
 
   .preview-icon .default-btn--micro:last-child {
-    bottom: 0;
-    left: 0;
+    bottom: -10px;
+    left: -10px;
   }
 }
