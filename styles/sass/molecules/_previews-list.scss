@@ -1,5 +1,13 @@
 .previews-list {
   margin: 0 0 53px;
+
+  .horizontal-list {
+    text-align: center;    
+  }
+
+  .horizontal-list__item {
+    margin: 0 9px;
+  }
 }
 
 .previews-list__header {
@@ -7,12 +15,20 @@
   margin: 0 0 30px;
 }
 
+.previews-list .default-btn--micro {
+  position: absolute;
+  font-size: 20px;
+  color: $default-icon;
+}
+
 .previews-list {
-  .horizontal-list {
-    text-align: center;
+  .preview-icon .default-btn--micro:first-child {
+    top: 0;
+    right: 0;
   }
 
-  .horizontal-list__item {
-    margin: 0 9px;
+  .preview-icon .default-btn--micro:last-child {
+    bottom: 0;
+    left: 0;
   }
 }

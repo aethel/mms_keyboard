@@ -1,88 +1,40 @@
-[class^="icon-"] {
-  &::before {
-    content: '';
-    display: inline-block;
-    background-image: url(../../../images/sprite.svg);
-    background-repeat: no-repeat;
-  }
+@font-face {
+    font-family: 'icomoon';
+    src:
+        url('../../fonts/icomoon.ttf?djx6u7') format('truetype'),
+        url('../../fonts/icomoon.woff?djx6u7') format('woff'),
+        url('../../fonts/icomoon.svg?djx6u7#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-[class^="icon-ok-secondary"] {
-  &::before {
-    width: 39px;
-    height: 32px;
-    background-position: 0 0;
-  }    
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-[class^="icon-ok-primary"] {
-  &::before {
-    width: 39px;
-    height: 32px;
-    background-position: -208px 0;
-  }    
+.icon-close-primary:before {
+    content: "\e901";
 }
-
-[class^="icon-close-primary"] {
-  &::before {
-    width: 32px;
-    height: 32px;
-    background-position: -52px 0;
-  }    
+.icon-edit-primary:before {
+    content: "\e902";
 }
-
-[class^="icon-close-secondary"] {
-  &::before {
-    width: 32px;
-    height: 32px;
-    background-position: -312px 0;
-  }    
+.icon-next-primary:before {
+    content: "\e903";
 }
-
-[class^="icon-edit-primary"] {
-  &::before {
-    width: 32px;
-    height: 32px;
-    background-position: -104px 0;
-  }    
+.icon-ok-primary:before {
+    content: "\e904";
 }
-
-[class^="icon-edit-secondary"] {
-  &::before {
-    width: 32px;
-    height: 32px;
-    background-position: -364px 0;
-  }    
-}
-
-[class^="icon-prev-primary"] {
-  &::before {
-    width: 24px;
-    height: 32px;
-    background-position: -260px 0;
-  }    
-}
-
-[class^="icon-prev-secondary"] {
-  &::before {
-    width: 24px;
-    height: 32px;
-    background-position: -468px 0;
-  }    
-}
-
-[class^="icon-next-primary"] {
-  &::before {
-    width: 24px;
-    height: 32px;
-    background-position: -156px 0;
-  }    
-}
-
-[class^="icon-next-secondary"] {
-  &::before {
-    width: 24px;
-    height: 32px;
-    background-position: -416px 0;
-  }    
+.icon-prev-primary:before {
+    content: "\e905";
 }
