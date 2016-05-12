@@ -40,6 +40,13 @@
   height: 78px;
 }
 
+.default-btn--micro {
+  @extend %default-btn;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
 .default-btn--large-round {
   @extend %default-btn;
   width: 170px;

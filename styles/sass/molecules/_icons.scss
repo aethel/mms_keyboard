@@ -1,0 +1,88 @@
+[class^="icon-"] {
+  &::before {
+    content: '';
+    display: inline-block;
+    background-image: url(../../../images/sprite.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+[class^="icon-ok-secondary"] {
+  &::before {
+    width: 39px;
+    height: 32px;
+    background-position: 0 0;
+  }    
+}
+
+[class^="icon-ok-primary"] {
+  &::before {
+    width: 39px;
+    height: 32px;
+    background-position: -208px 0;
+  }    
+}
+
+[class^="icon-close-primary"] {
+  &::before {
+    width: 32px;
+    height: 32px;
+    background-position: -52px 0;
+  }    
+}
+
+[class^="icon-close-secondary"] {
+  &::before {
+    width: 32px;
+    height: 32px;
+    background-position: -312px 0;
+  }    
+}
+
+[class^="icon-edit-primary"] {
+  &::before {
+    width: 32px;
+    height: 32px;
+    background-position: -104px 0;
+  }    
+}
+
+[class^="icon-edit-secondary"] {
+  &::before {
+    width: 32px;
+    height: 32px;
+    background-position: -364px 0;
+  }    
+}
+
+[class^="icon-prev-primary"] {
+  &::before {
+    width: 24px;
+    height: 32px;
+    background-position: -260px 0;
+  }    
+}
+
+[class^="icon-prev-secondary"] {
+  &::before {
+    width: 24px;
+    height: 32px;
+    background-position: -468px 0;
+  }    
+}
+
+[class^="icon-next-primary"] {
+  &::before {
+    width: 24px;
+    height: 32px;
+    background-position: -156px 0;
+  }    
+}
+
+[class^="icon-next-secondary"] {
+  &::before {
+    width: 24px;
+    height: 32px;
+    background-position: -416px 0;
+  }    
+}
