@@ -3,7 +3,7 @@ $dark: #000;
 $light: #fff;
 
 /* background colours */
-$default-blue: #1e87c7 ;
+$default-blue: #1e87c7;
 $lighter-blue: #1f86c8;
 $disabled: #b8b8b8;
 $active-button: #57cd7f;
@@ -22,9 +22,9 @@ $disabled-text: #808080;
 
 /* fonts */
 @font-face {
-  font-family: 'bebas_neuebold';
-  src: url('../../fonts/bebasneue_bold-webfont.woff2') format('woff2'), url('../../fonts/bebasneue_bold-webfont.woff') format('woff');
+  font-family: 'gotham-bold';
+  src: url('../../fonts/Gotham-Bold.woff2') format('woff2'), url('../../fonts/Gotham-Bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-$default-font: 'bebas_neuebold';
+$default-font: 'gotham-bold';

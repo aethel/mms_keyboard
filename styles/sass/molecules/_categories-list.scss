@@ -1,6 +1,6 @@
 .categories-list {
   text-align: center;
-  margin:0 0 61px 0;
+  margin: 0 0 68px;
 }
 
 .categories-list__item {
@@ -9,40 +9,41 @@
 }
 
 .categories-list__item--photo {
-  .btn--large-icon::after{
-    background: url(../../../images/categoriesSprite.png), linear-gradient(-60deg, $button-icon-light-stop, $button-icon-dark-stop); 
-    background-position: left center;  
+  .btn--large-icon::after {
+    background: url(../../../images/categoriesSprite.png), linear-gradient(-60deg, $button-icon-light-stop, $button-icon-dark-stop);
+    background-position: left center;
     background-blend-mode: multiply;
-  }  
+  }
 }
 
 .categories-list__item--theme {
-  .btn--large-icon::after{
-    background: url(../../../images/categoriesSprite.png), linear-gradient(-60deg, $button-icon-light-stop, $button-icon-dark-stop); 
+  .btn--large-icon::after {
+    background: url(../../../images/categoriesSprite.png), linear-gradient(-60deg, $button-icon-light-stop, $button-icon-dark-stop);
     background-position: -111px center;
   }
 }
 
 .categories-list__item--message {
-  .btn--large-icon::after{
-    background: url(../../../images/categoriesSprite.png), linear-gradient(-60deg, $button-icon-light-stop, $button-icon-dark-stop); 
+  .btn--large-icon::after {
+    background: url(../../../images/categoriesSprite.png), linear-gradient(-60deg, $button-icon-light-stop, $button-icon-dark-stop);
     background-position: -222px center;
   }
 }
 
 .categories-list__item--sport {
-  .btn--large-icon::after{
-    background: url(../../../images/categoriesSprite.png), linear-gradient(-60deg, $button-icon-light-stop, $button-icon-dark-stop); 
+  .btn--large-icon::after {
+    background: url(../../../images/categoriesSprite.png), linear-gradient(-60deg, $button-icon-light-stop, $button-icon-dark-stop);
     background-position: -333px center;
   }
-} 
+}
 
 .categories-list__intro {
   color: $dark;
   position: absolute;
-  margin:0 0 0 -310px;
-  font-size: 36px;
+  margin: 5px 0 0 -310px;
+  font-size: 24px;
   width: 290px;
   text-align: right;
   top: 48px;
+  text-transform: uppercase;
 }
