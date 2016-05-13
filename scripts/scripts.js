@@ -12,7 +12,6 @@ var InitSlider = function() {
 				viewPortWidth = 865;
 
     nextBtn.addEventListener('click', function() {
-        console.log(viewportSlider.offsetWidth - 865, viewportSlider.offsetLeft);
         if (-viewportSlider.offsetLeft > viewportSlider.offsetWidth - viewPortWidth) {
             return;
         } else {
@@ -20,7 +19,6 @@ var InitSlider = function() {
         }
     }, false);
     prevBtn.addEventListener('click', function() {
-        console.log(viewportSlider.offsetWidth - 865, viewportSlider.offsetLeft);
         if (viewportSlider.offsetLeft == 0) {
             return;
         } else {
