@@ -1,0 +1,34 @@
+.viewport {
+	width: 865px;
+	margin: 0 auto;
+	overflow: hidden;
+
+	.default-btn--double {
+		padding: 12px 0 8px;
+		background: $default-blue;
+		color: $light;
+		width: 200px;
+		box-shadow: inset 0 2px 2px -1px transparentize($light, 0.25), 0 10px 10px transparentize($dark, 0.75);
+		&.is-active {
+			background: $active-button;
+			box-shadow: inset 0 2px 3px -1px transparentize($light, 0.25), 0 5px 5px transparentize($dark, 0.55);
+		}
+	}
+
+	.default-btn--double__second-line {
+		line-height: 1;
+	}
+
+	.horizontal-list {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.horizontal-list__item:first-child {
+		margin: 0 10px 0 0;
+	}
+
+	.horizontal-list__item:nth-child(4) {
+		margin: 0 0 0 10px;
+	}
+}

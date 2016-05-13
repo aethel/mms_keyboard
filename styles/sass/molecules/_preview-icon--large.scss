@@ -1,0 +1,57 @@
+.preview-icon--large {
+  width: 336px;
+  height: 336px;
+  margin: 0 auto 33px;
+  position: relative;
+
+  &::before, &::after {
+    content: '';
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  &::before {
+    width: 100%;
+    height: 100%;
+    background: $darker-blue;
+  }
+
+  &::after {
+    width: 240px;
+    height: 240px;
+    background: radial-gradient(ellipse at top, $button-icon-light-stop 50%, $button-icon-dark-stop);
+    box-shadow: 0 10px 10px transparentize($dark, 0.7);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .default-btn--round-double {
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  [class^="icon-"] {
+    color: $default-icon;
+  }
+
+  .default-btn--round-double:first-child {
+    left: -52px;
+  }
+
+  .default-btn--round-double:last-child {
+    right: -52px;
+  }
+}
+
+.preview-icon--large__image {
+  max-width: 157px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}

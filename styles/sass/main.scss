@@ -3,6 +3,7 @@
 @import 'utilities/mixins';
 @import 'utilities/helpers';
 
+/* atoms */
 @import 'atoms/_typography';
 @import 'atoms/_buttons';
 @import 'atoms/_grid';
@@ -10,19 +11,24 @@
 @import 'atoms/_headers';
 @import 'atoms/_horizontal-list';
 
+/* molecules */
 @import 'molecules/_main-header';
 @import 'molecules/_categories-list';
 @import 'molecules/_previews-list';
+@import 'molecules/_preview-icon--large';
 @import 'molecules/_preview-icon';
 @import 'molecules/_hero-image';
 @import 'molecules/_icons';
+@import 'molecules/_viewport';
 
+/* organisms */
+@import 'organisms/_pick-team';
 
-/*OF SHAME*/
+/* OF SHAME */
 .wrapper {
   background: url(../../images/main-background.png) no-repeat center top transparent;
   padding-bottom: 64px;
-  
+
   .default-btn--double {
     margin: 0 auto;
   }
