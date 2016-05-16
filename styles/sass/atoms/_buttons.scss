@@ -73,6 +73,40 @@
   }
 }
 
+.default-btn--large-round-image {
+	@extend .default-btn--large-round;
+	position: relative;
+
+	&::after {
+		content: '';
+		position: absolute;
+		width: 151px;
+		height: 151px;
+		border-radius: 50%;
+		background: radial-gradient(ellipse at top, $button-icon-light-stop 50%, $button-icon-dark-stop);
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	&:focus, &:active {
+		&::after {
+			border: 2px solid $default-blue;
+			width: 149px;
+			height: 149px;
+		}
+	}
+
+	.default-btn__image {
+		max-width: 60%;
+		z-index: 2;
+		position: absolute;
+		transform: translate(-50%, -50%);
+		top: 50%;
+		left: 50%;
+	}
+}
+
 .default-btn--round-control {
   @extend %default-btn;
   color: $dark;
