@@ -9,7 +9,7 @@ var InitSlider = function() {
     var nextBtn = document.querySelector('.js-next'),
     		prevBtn = document.querySelector('.js-prev'),
         viewportSlider = document.querySelector('.js-viewport-slider'),
-				viewPortWidth = 865;
+				viewPortWidth = 880;
 
     nextBtn.addEventListener('click', function() {
         if (-viewportSlider.offsetLeft > viewportSlider.offsetWidth - viewPortWidth) {
