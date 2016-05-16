@@ -1,3 +1,22 @@
+.viewport-wrapper {
+	position: relative;
+
+	.btn--slider {
+		position: absolute;
+		color: $darker-icon;
+		padding: 0;
+		top: 13px;
+	}
+
+	[class*="-prev-"]{
+		left: 23px;
+	}
+
+	[class*="-next-"]{
+		right: 23px;
+	}
+}
+
 .viewport {
 	width: 880px;
 	margin: 0 auto;
@@ -6,7 +25,7 @@
 	height: 110px;
 
 	.default-btn--double {
-		padding: 11px 0 4px;
+		padding: 10px 0 5px;
 		background: $default-blue;
 		color: $light;
 		width: 200px;
