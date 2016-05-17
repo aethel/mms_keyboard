@@ -2,6 +2,9 @@
 	.main-header__heading {
 		margin: 21px 0 0;
 	}
+	.horizontal-list {
+		margin: 0 0 20px;
+	}
 	.horizontal-list__item {
 		margin: 0 32px 30px;
 	}
@@ -31,5 +34,8 @@
 	}
 	.default-btn__image {
 		max-width: 100%;
+	}
+	.default-btn--double {
+		padding: 19px 0;
 	}
 }

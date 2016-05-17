@@ -1,0 +1,19 @@
+input[type=text] {
+	width: 232px;
+	height: 50px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 2px dashed $border;
+	font-size:32px;
+	text-align: center;
+	font-family: $default-font;
+
+	&:focus,
+	&:active {
+		background: $input-active;
+	}
+	&.is-warning {
+		color: $light-warning;
+	}
+}

@@ -4,26 +4,30 @@
 @import 'utilities/helpers';
 
 /* atoms */
-@import 'atoms/_typography';
-@import 'atoms/_buttons';
-@import 'atoms/_grid';
-@import 'atoms/_typography';
-@import 'atoms/_headers';
-@import 'atoms/_horizontal-list';
+@import 'atoms/typography';
+@import 'atoms/buttons';
+@import 'atoms/grid';
+@import 'atoms/typography';
+@import 'atoms/headers';
+@import 'atoms/horizontal-list';
+@import 'atoms/input-text';
+@import 'atoms/label';
 
 /* molecules */
-@import 'molecules/_main-header';
-@import 'molecules/_categories-list';
-@import 'molecules/_previews-list';
-@import 'molecules/_preview-icon--large';
-@import 'molecules/_preview-icon';
-@import 'molecules/_hero-image';
-@import 'molecules/_icons';
-@import 'molecules/_viewport';
+@import 'molecules/main-header';
+@import 'molecules/categories-list';
+@import 'molecules/previews-list';
+@import 'molecules/preview-icon--large';
+@import 'molecules/preview-icon';
+@import 'molecules/hero-image';
+@import 'molecules/icons';
+@import 'molecules/viewport';
+@import 'molecules/input-set';
 
 /* organisms */
-@import 'organisms/_pick-team';
-@import 'organisms/_how-it-works';
+@import 'organisms/team-personalisation';
+@import 'organisms/message-personalisation';
+@import 'organisms/how-it-works';
 
 /* OF SHAME */
 .wrapper {
