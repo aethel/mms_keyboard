@@ -5,6 +5,7 @@
         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
         <title>M&amp;M's keyboard</title>
         <link rel="stylesheet" href="styles/css/main.css" type="text/css">
+        <script type="text/javascript" src="vendor/keyboard/vk_loader.js?vk_layout=CN%20Chinese%20Simpl.%20Pinyin&vk_skin=flat_blue"></script>
     </head>
     <body>
         <div class="wrapper">
@@ -318,9 +319,9 @@
                         <span class="default-btn--round-first-line">Clear</span>
                     </button>
                     <div class="input-set">
-                        <input type="text" text="" autofocus>
+                        <input type="text" id="text" autofocus onfocus="VirtualKeyboard.attachInput(this)">
                         <p class="label">9 characters left</p>
-                        <input type="text" text="">
+                        <input type="text" id="text" onfocus="VirtualKeyboard.attachInput(this)">
                         <p class="label">9 characters left</p>
                     </div>
                     <button class="default-btn--round-double">
@@ -328,17 +329,13 @@
                         <span class="default-btn--round-first-line">Ok</span>
                     </button>
                 </div>
-            </div>
-
+								<div id="keyboard"></div>
         </section>
     </div>
-    <script type="text/javascript" src="/scripts/scripts.js"></script>
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="filters">
-        <defs>
-            <filter id="blur">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="0,0"/>
-            </filter>
-        </defs>
-    </svg> -->
+		<script type="text/javascript">
+				VirtualKeyboard.toggle('text', 'keyboard');
+		</script>
+		<script type="text/javascript" src="/scripts/scripts.js"></script>
+
 </body>
 </html>
