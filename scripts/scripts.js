@@ -30,15 +30,15 @@ var InitSlider = function() {
         }
     }, false);
 
-		viewportSlider.addEventListener('click', function(e){
-			classToggler(e, 'js-slider-btn', 'is-active');
-		}, false);
+    viewportSlider.addEventListener('click', function(e) {
+        classToggler(e, 'js-slider-btn', 'is-active');
+    }, false);
 };
 
 var classToggler = function(event, targetClass, newClass) {
     var correctTarget = event.target != event.currentTarget && event.target.classList.contains(targetClass) ? true : false;
     if (correctTarget) {
-    event.target.classList.toggle(newClass);
+        event.target.classList.toggle(newClass);
     }
 }
 

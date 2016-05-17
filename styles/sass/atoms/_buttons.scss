@@ -193,3 +193,22 @@
 	background: none;
 	font-size: 37px;
 }
+
+.default-btn--counter {
+	@extend .default-btn--round;
+	width: 112px;
+	height: 112px;
+	background: $counter;
+	text-shadow: 0 1px 1px transparentize($dark, 0.65);
+	box-shadow: 0 4px 4px transparentize($dark, 0.65);
+}
+
+.default-btn--counter__first-line {
+	font-size: 20px;
+	display: block;
+}
+
+.default-btn--counter__second-line {
+	font-size: 84px;
+	line-height: 0.8;
+}
