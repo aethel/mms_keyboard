@@ -29,6 +29,7 @@ var InitSlider = function() {
         viewPortWidth = 880;
 
     nextBtn.addEventListener('click', function() {
+			this.style.pointerEvents= 'none';
         if (-viewportSlider.offsetLeft > viewportSlider.offsetWidth - viewPortWidth) {
             return;
         } else {
@@ -37,6 +38,7 @@ var InitSlider = function() {
         }
     }, false);
     prevBtn.addEventListener('click', function() {
+				this.style.pointerEvents= 'none';
         if (viewportSlider.offsetLeft == 0) {
             return;
         } else {
@@ -52,6 +54,8 @@ var InitSlider = function() {
     }, false);
 
     viewportSlider.addEventListener('transitionend', function() {
+				prevBtn.style.pointerEvents= 'all';
+				nextBtn.style.pointerEvents= 'all';
         viewportSlider.offsetLeft == 0 ? prevBtn.classList.add('is-hidden') : prevBtn.classList.remove('is-hidden');
 				-viewportSlider.offsetLeft > viewportSlider.offsetWidth - viewPortWidth ? nextBtn.classList.add('is-hidden') : nextBtn.classList.remove('is-hidden');
     }, false);
