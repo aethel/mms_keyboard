@@ -4,6 +4,7 @@
 
   .default-btn--half-left,.default-btn--half-right {
     position: relative;
+		vertical-align: top;
   }
 
   .default-btn--half-left {
@@ -17,7 +18,7 @@
   .default-btn--half-left::after,.default-btn--half-right::after {
     content: '';
     display: block;
-    background-image: url(../../../images/icons-sprite.png);
+    background-image: url(../../images/icons-sprite.png);
     width: 95px;
     height: 90px;
     position: absolute;

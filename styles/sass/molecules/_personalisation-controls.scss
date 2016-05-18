@@ -1,0 +1,53 @@
+.personalisation-controls {
+	position: relative;
+	overflow: hidden;
+	height: 197px;
+	width: 451px;
+	&::before {
+		content: '';
+		border-radius: 50%;
+		background: $darkest-blue;
+		position: absolute;
+		width: 451px;
+		height: 451px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+	}
+	.horizontal-list__item:nth-child(1),
+	.horizontal-list__item:nth-child(2),
+	.horizontal-list__item:nth-child(3),
+	.horizontal-list__item:nth-child(4) {
+		position: absolute;
+		margin: 0;
+	}
+	.horizontal-list__item:nth-child(2),
+	.horizontal-list__item:nth-child(3) {
+		transform: translateX(-50%);
+	}
+	.horizontal-list__item:nth-child(1) {
+		left: 52px;
+		top: 78px;
+	}
+	.horizontal-list__item:nth-child(2) {
+		left: 50%;
+		top: 20px;
+		margin: 0px;
+	}
+	.horizontal-list__item:nth-child(3) {
+		left: 50%;
+		bottom: -46px;
+		margin: 0px;
+		.default-btn--round-control {
+			font-size: 34px;
+		}
+		.default-btn--round-control .icon-close-primary {
+			position: relative;
+			top: -14px;
+		}
+	}
+	.horizontal-list__item:nth-child(4) {
+		right: 52px;
+		top: 78px;
+	}
+}
