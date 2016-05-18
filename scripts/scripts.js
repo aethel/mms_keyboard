@@ -14,12 +14,12 @@ var InitSlider = function() {
         viewportSliderBtns = viewportSlider.querySelectorAll('.js-slider-btn'),
         viewPortWidth = 880;
 
-    console.log(viewportSliderBtns);
     nextBtn.addEventListener('click', function() {
         if (-viewportSlider.offsetLeft > viewportSlider.offsetWidth - viewPortWidth) {
             return;
         } else {
-            viewportSlider.style.left = viewportSlider.offsetLeft - viewPortWidth + 'px';
+					prevBtn.classList.remove('is-hidden')
+          viewportSlider.style.left = viewportSlider.offsetLeft - viewPortWidth + 'px';
         }
     }, false);
     prevBtn.addEventListener('click', function() {
@@ -31,7 +31,15 @@ var InitSlider = function() {
     }, false);
 
     viewportSlider.addEventListener('click', function(e) {
+        for (var i = 0; i < viewportSliderBtns.length; i++) {
+            viewportSliderBtns[i].classList.remove('is-active');
+        }
         classToggler(e, 'js-slider-btn', 'is-active');
+    }, false);
+
+    viewportSlider.addEventListener('transitionend', function() {
+        viewportSlider.offsetLeft == 0 ? prevBtn.classList.add('is-hidden') : prevBtn.classList.remove('is-hidden');
+				-viewportSlider.offsetLeft > viewportSlider.offsetWidth - viewPortWidth ? nextBtn.classList.add('is-hidden') : nextBtn.classList.remove('is-hidden');
     }, false);
 };
 
