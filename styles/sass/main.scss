@@ -36,6 +36,8 @@
   background: url(../../images/main-background.png) no-repeat center top transparent;
   padding-bottom: 64px;
 	height: 1920px;
+	position: relative;
+	overflow: hidden;
 
   .default-btn--double {
     margin: 0 auto;

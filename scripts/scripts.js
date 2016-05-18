@@ -4,6 +4,20 @@
         InitSlider();
     }, false);
 
+var teamOptions = document.querySelector('.personalisation-controls'),
+		teamOptionsUpBtn = teamOptions.querySelector('.js-options-up'),
+		teamOptionsDownBtn = document.querySelector('.options-btn-wrapper .js-options-down');
+
+		teamOptionsUpBtn.addEventListener('click', function(){
+			teamOptions.classList.toggle('is-up');
+			teamOptionsDownBtn.parentNode.classList.toggle('is-down');
+		}, false);
+
+		teamOptionsDownBtn.addEventListener('click', function(){
+			this.parentNode.classList.toggle('is-down');
+			teamOptions.classList.toggle('is-up');
+		}, false);
+
 
 }());
 

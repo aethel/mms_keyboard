@@ -11,10 +11,29 @@
 	.personalisation-controls {
 		padding: 0 0 41px;
 		margin: 17px auto 0;
+		transition: bottom 0.5s ease-in-out;
+		bottom: -199px;
+
+		&.is-up {
+			bottom:0;
+		}
 	}
 	.horizontal-list__item {
 		margin: 0 10px;
 		position: relative;
 		z-index: 2;
+	}
+	.options-btn-wrapper {
+		height: 131px;
+		overflow: hidden;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		transform-style: preserve-3d;
+		transition: bottom 0.5s ease-in-out;
+
+		&.is-down {
+			bottom: -131px;
+		}
 	}
 }
