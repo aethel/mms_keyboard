@@ -171,11 +171,13 @@
   font-size: 20px;
   display: block;
   line-height: 0.75;
+	pointer-events: none;
 }
 
 .default-btn--double__second-line {
   font-size: 36px;
 	line-height: 1;
+	pointer-events: none;
 }
 
 .is-disabled, [disabled="true"] {
