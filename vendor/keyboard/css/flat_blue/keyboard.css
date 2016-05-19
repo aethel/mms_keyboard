@@ -565,9 +565,9 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 
 #kbDesk div.kbButton a {
 	box-shadow: inset 0 2px 2px -2px rgba(255,255,255,0.7), 0 2px 5px -1px rgba(0,0,0,0.3);
-	background-image: url(button_set-blueWhite.png) !important;
 	background-repeat: no-repeat !important;
 	background-color: #1f86c8 !important;
+	background-image: none;
 	display: block;
 	height: 100%;
 	position: relative;
@@ -640,7 +640,7 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 #virtualKeyboard.ZH div.kbButton span {
     font-family: MingLiU, SimSun, "Arial Unicode MS";
     font-size: 26px;
-    top: 37%;
+    top: 30%;
     font-weight: bold;
     font-family: arial;
 }
@@ -659,6 +659,62 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 	margin: 0;
 }
 
+#kbDesk div#kb_bctrl_left a,
+#kbDesk div#kb_bctrl_right a,
+#kbDesk div#kb_balt_left a,
+#kbDesk div#kb_balt_right a,
+#kbDesk div#kb_bshift_left a,
+#kbDesk div#kb_bshift_right a,
+#kbDesk div#kb_bbackspace a,
+#kbDesk div#kb_bcaps a,
+#kbDesk div#kb_bdel a,
+#kbDesk div#kb_btab a {
+	background-image: url(button_set-blueWhite.png) !important;
+}
 
+#kbDesk div#kb_bbackspace a,
+#kbDesk div#kb_bbackspace.kbButtonDown a,
+#kbDesk div#kb_bbackspace.kbButtonHover a {
+	background-position: -326px center;
+}
+#kbDesk div#kb_btab a,
+#kbDesk div#kb_btab.kbButtonDown a,
+#kbDesk div#kb_btab.kbButtonHover a {
+	background-position: -10px 0;
+}
+#kbDesk div#kb_bcaps a,
+#kbDesk div#kb_bcaps.kbButtonDown a,
+#kbDesk div#kb_bcaps.kbButtonHover a {
+	background-position: -99px center;
+}
+#kbDesk div#kb_bshift_left a,
+#kbDesk div#kb_bshift_left.kbButtonDown a,
+#kbDesk div#kb_bshift_left.kbButtonHover a,
+#kbDesk div#kb_bshift_right.kbButtonHover a,
+#kbDesk div#kb_bshift_right a {
+	background-position: -201px center;
+}
+#kbDesk div#kb_bdel a,
+#kbDesk div#kb_bdel.kbButtonDown a,
+#kbDesk div#kb_bdel.kbButtonHover a {
+	background-position: -526px center;
+}
+#kbDesk div#kb_balt_left a,
+#kbDesk div#kb_balt_left.kbButtonDown a,
+#kbDesk div#kb_balt_left.kbButtonHover a,
+#kbDesk div#kb_balt_right a,
+#kbDesk div#kb_balt_right.kbButtonDown a,
+#kbDesk div#kb_balt_right.kbButtonHover a {
+	background-position: -414px center;
+}
+
+#kbDesk div#kb_bctrl_left a,
+#kbDesk div#kb_bctrl_left.kbButtonDown a,
+#kbDesk div#kb_bctrl_left.kbButtonHover a,
+#kbDesk div#kb_bctrl_right.kbButtonDown a,
+#kbDesk div#kb_bctrl_right.kbButtonHover a,
+#kbDesk div#kb_bctrl_right a {
+	background-position: -616px center;
+}
 
 /*END OF ADJUSTMENTS*/
