@@ -117,7 +117,7 @@
                                 </button>
                             </figure>
                         </li>
-												<li class="horizontal-list__item">
+                        <li class="horizontal-list__item">
                             <figure class="preview-icon">
                                 <button class="default-btn--micro">
                                     <i class="icon-close-primary"></i>
@@ -127,7 +127,8 @@
                                     <i class="icon-edit-primary"></i>
                                 </button>
                             </figure>
-                        </li><li class="horizontal-list__item">
+                        </li>
+                        <li class="horizontal-list__item">
                             <figure class="preview-icon">
                                 <button class="default-btn--micro">
                                     <i class="icon-close-primary"></i>
@@ -137,7 +138,8 @@
                                     <i class="icon-edit-primary"></i>
                                 </button>
                             </figure>
-                        </li><li class="horizontal-list__item">
+                        </li>
+                        <li class="horizontal-list__item">
                             <figure class="preview-icon">
                                 <button class="default-btn--micro">
                                     <i class="icon-close-primary"></i>
@@ -157,7 +159,7 @@
             </section>
 
             <!-- Pick a sports team view-->
-            <section class="team-personalisation">
+            <section class="team-personalisation is-hidden">
                 <figure class="hero-image">
                     <img src="images/orange-character.png" alt="" class="hero-image__image">
                 </figure>
@@ -307,27 +309,29 @@
                         <button class="default-btn--round-control">Theme</button>
                     </li>
                     <li class="horizontal-list__item">
-                    	<button class="default-btn--round-control">Photo</button>
+                        <button class="default-btn--round-control">Photo</button>
                     </li>
                     <li class="horizontal-list__item">
-                    	<button class="default-btn--round-control js-options-up"><i class="icon-close-primary"></i></button>
+                        <button class="default-btn--round-control js-options-up">
+                            <i class="icon-close-primary"></i>
+                        </button>
                     </li>
                     <li class="horizontal-list__item">
-                    	<button class="default-btn--round-control">Message</button>
+                        <button class="default-btn--round-control">Message</button>
                     </li>
                 </ul>
-								<div class="options-btn-wrapper is-centred">
-									<button class="js-options-down default-btn--round-control-large">
-										<span class="default-btn--round-control-large__first-line">Other</span>
-										<span class="default-btn--round-control-large__second-line">Options</span>
-									</button>
-								</div>
+                <div class="options-btn-wrapper is-centred">
+                    <button class="js-options-down default-btn--round-control-large">
+                        <span class="default-btn--round-control-large__first-line">Other</span>
+                        <span class="default-btn--round-control-large__second-line">Options</span>
+                    </button>
+                </div>
             </section>
 
             <!-- Personalise a message-->
-            <section class="message-personalisation is-hidden">
+            <section class="message-personalisation">
                 <figure class="hero-image">
-                    <img src="images/orange-character.png" alt="" class="hero-image__image">
+                    <img src="images/blue-character.png" alt="" class="hero-image__image">
                 </figure>
                 <header class="main-header">
                     <button class="default-btn--half-right"></button>
@@ -352,6 +356,98 @@
                     </button>
                 </div>
                 <div id="keyboard"></div>
+            </section>
+
+            <!-- Order summary-->
+            <section class="order-summary  is-hidden">
+                <figure class="hero-image">
+                    <img src="images/brown-character.png" alt="" class="hero-image__image">
+                </figure>
+                <header class="main-header">
+                    <button class="default-btn--half-right"></button>
+                    <h1 class="main-header__heading">Order summary</h1>
+                    <button class="default-btn--half-left">Restart</button>
+                </header>
+                <ul class="horizontal-list summary-items">
+                    <li class="horizontal-list__item">
+                        <button class="default-btn--half-left">-</button>
+                        <span class="summary-items__quantity">2</span>
+                        <button class="default-btn--half-left">+</button>
+                    </li>
+										<li class="horizontal-list__item">
+											<figure><img src="cup-small.png" alt="" class="src">
+											</figure>
+											<ul>
+												<li>
+													<i class="icon-m"></i><span>1 photo</span>
+												</li>
+												<li>
+													<i class="icon-m"></i><span>1 message</span>
+												</li>
+												<li>
+													<i class="icon-m"></i><span>1 theme</span>
+												</li>
+												<li>
+													<i class="icon-m"></i><span>1 sportv</span>
+												</li>
+											</ul>
+										</li>
+                </ul>
+                <section class="previews-list">
+                    <header class="previews-list__header">
+                        <h2>You can choose up to 4 designs</h2>
+                    </header>
+                    <ul class="horizontal-list">
+                        <li class="horizontal-list__item">
+                            <figure class="preview-icon">
+                                <button class="default-btn--micro is-visible">
+                                    <i class="icon-close-primary"></i>
+                                </button>
+                                <img src="/images/image-placeholder.png" alt=""/>
+                                <button class="default-btn--micro is-visible">
+                                    <i class="icon-edit-primary"></i>
+                                </button>
+                            </figure>
+                        </li>
+                        <li class="horizontal-list__item">
+                            <figure class="preview-icon">
+                                <button class="default-btn--micro">
+                                    <i class="icon-close-primary"></i>
+                                </button>
+                                <img src="/images/m-preview.png" alt=""/>
+                                <button class="default-btn--micro">
+                                    <i class="icon-edit-primary"></i>
+                                </button>
+                            </figure>
+                        </li>
+                        <li class="horizontal-list__item">
+                            <figure class="preview-icon">
+                                <button class="default-btn--micro">
+                                    <i class="icon-close-primary"></i>
+                                </button>
+                                <img src="/images/m-preview.png" alt=""/>
+                                <button class="default-btn--micro">
+                                    <i class="icon-edit-primary"></i>
+                                </button>
+                            </figure>
+                        </li>
+                        <li class="horizontal-list__item">
+                            <figure class="preview-icon">
+                                <button class="default-btn--micro">
+                                    <i class="icon-close-primary"></i>
+                                </button>
+                                <img src="/images/m-preview.png" alt=""/>
+                                <button class="default-btn--micro">
+                                    <i class="icon-edit-primary"></i>
+                                </button>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+                <button class="default-btn--double">
+                    <span class="default-btn--double__first-line">next step</span>
+                    <span class="default-btn--double__second-line">select cup size</span>
+                </button>
             </section>
         </div>
         <script type="text/javascript">

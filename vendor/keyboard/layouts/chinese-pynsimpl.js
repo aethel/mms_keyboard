@@ -1,7 +1,7 @@
 VirtualKeyboard.addLayout({
 	code: 'ZH-CN'
 	, name: 'Chinese Simpl. Pinyin'
-	, normal: '`1234567890-=\\qwertyuiop[]asdfghjkl;\'zxcvbnm@./'
+	, normal: '`1234567890-=\\qwertyuiop[]asdfghjkl;\'zxcvbnm,./'
 	, alt: {
 		26: 'm'
 		, 27: 'o'
@@ -16,7 +16,7 @@ VirtualKeyboard.addLayout({
 		, 28: 'l'
 	}
 	, shift: {
-		0: '~！·#￥%…—*（）—+|'		
+		// 0: '~！·#￥%…—*（）—+|'
 	}
 	, 'cbk': new function () {
 		var i = this;

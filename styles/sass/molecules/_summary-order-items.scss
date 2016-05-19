@@ -1,0 +1,9 @@
+.summary-items {
+	.horizontal-list {
+		@include row();
+	}
+
+	.horizontal-list__item {
+		@include column(2,8);
+	}
+}

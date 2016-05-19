@@ -26,7 +26,7 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 */
 #virtualKeyboard * {
 	border: 0;
-	color: black; 
+	color: black;
 	cursor: default;
 	margin: 0;
 	padding: 0;
@@ -130,7 +130,7 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 #kbDesk.modeAlt span.charShiftCaps,
 #kbDesk.modeNormal span.charCaps,
 #kbDesk.modeNormal span.charShiftAlt,
-#kbDesk.modeNormal span.charShiftCaps, 
+#kbDesk.modeNormal span.charShiftCaps,
 #kbDesk.modeNormal span.hiddenShift,
 #kbDesk.modeShift span.hiddenShift,
 #kbDesk.modeShift span.charAlt,
@@ -546,37 +546,6 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 
 
 /*hide keys*/
-#kb_b0,
-#kb_b1,
-#kb_b2,
-#kb_b3,
-#kb_b4,
-#kb_b5,
-#kb_b6,
-#kb_b7,
-#kb_b8,
-#kb_b9,
-#kb_b10,
-#kb_b11,
-#kb_b12,
-#kb_b13,
-#kb_b24,
-#kb_b25,
-#kb_b35,
-#kb_b36,
-#kb_b46,
-#kb_btab,
-#kb_bcaps,
-#kb_bdel,
-#kb_bctrl_left
-{
-	display: none;
-}
-
-
-#kb_bbackspace{
-	float: right !important;
-}
 
 #kbDesk.modeAlt span.charAlt,
 #kbDesk.modeCaps span.charCaps,
@@ -587,62 +556,11 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 	color: #fff !important;
 }
 
-#kbDesk #kb_b26 {
-	margin:6px 8px 6px 50px;	
-}
-
-#kbDesk #kb_b27,
-#kbDesk #kb_b28,
-#kbDesk #kb_b29,
-#kbDesk #kb_b30,
-#kbDesk #kb_b31,
-#kbDesk #kb_b32,
-#kbDesk #kb_b33
-{
-	margin: 6px 8px 6px 9px;
-}
-
-
 #kbDesk div.kbButton {
 	overflow:visible;
-	margin:6px 9px;
-	width: 80px;
-	height: 80px;
-}
-
-#kbDesk div#kb_bshift_left, 
-#kbDesk div#kb_bshift_right,
-#kbDesk #kb_b37,
-#kbDesk #kb_b38,
-#kbDesk #kb_b39,
-#kbDesk #kb_b40,
-#kbDesk #kb_b41,
-#kbDesk #kb_b42,
-#kbDesk #kb_b43,
-#kbDesk #kb_b44,
-#kbDesk #kb_b45 {
-	margin:6px 7px 6px 8px;
-}
-
-
-
-#kbDesk #kb_b15,
-#kbDesk #kb_b16,
-#kbDesk #kb_b17,
-#kbDesk #kb_b18,
-#kbDesk #kb_b19,
-#kbDesk #kb_b20,
-#kbDesk #kb_b22,
-#kbDesk #kb_b23 {
-	margin:6px 9px 6px 8px;
-}
-
-#kbDesk #kb_bbackspace{
-	margin:6px 11px 6px 9px;
-}
-
-#kbDesk #kb_b14 {
-	margin:6px 10px 6px 8px;
+	margin:1px 2px;
+	width: 67px;
+	height: 60px;
 }
 
 #kbDesk div.kbButton a {
@@ -654,7 +572,7 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 	height: 100%;
 	position: relative;
 	text-decoration: none;
-	width: 100%;				
+	width: 100%;
 	border-radius:10px;
 }
 
@@ -662,23 +580,22 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 	background: #1f86c8;
 	width:1080px;
 	height: 387px;
-	padding:0;
+	padding:10px 8px 10px 7px;
 	border:none;
 }
 
 #kbDesk div#kb_benter {
-	width: 150px;
-	height: 80px;
+	width: 163px;
+	height: 60px;
 	margin-left:0;
 }
 
-#kbDesk div#kb_balt_left {
-	clear:left;
+#kbDesk div#kb_btab {
+	width: 91px;
 }
 
-#kbDesk div#kb_bspace {
-	width: 486px;
-	
+#kbDesk div#kb_bcaps {
+	width: 114px;
 }
 
 #kbDesk div#kb_bbackspace a {
@@ -689,33 +606,30 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
     background-position: -258px -1px;
 }
 
-#kbDesk div#kb_bshift_left {
-	width: 80px;
-	margin-right:
-}
-
 #kbDesk div#kb_bshift_right {
 	width:105px;
 	margin-right:0;
 }
 
+#kbDesk div#kb_bspace {
+	width: 420px;
+}
+
+#kbDesk div#kb_bctrl_left,
+#kbDesk div#kb_bctrl_right,
+#kbDesk div#kb_balt_left,
+#kbDesk div#kb_balt_right {
+	width: 90px;
+}
+
 #kbDesk div#kb_balt_left {
-	width:175px;
-	margin-left:9px;
-	margin-right: 6px;
+	margin-left: 92px;
 }
 
-#kbDesk div#kb_balt_right{
-	width:80px;
-}
 
-#kbDesk div#kb_bctrl_right {
-	width:80px;
-}
-
-#kbDesk div#kb_bspace,
-#kbDesk div#kb_bmore{
-	margin:6px;
+#kbDesk div#kb_bshift_left,
+#kbDesk div#kb_bshift_right {
+	width: 138px;
 }
 
 #kbDesk div#kb_bshift_left.kbButtonDown a,
@@ -727,7 +641,6 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
     font-family: MingLiU, SimSun, "Arial Unicode MS";
     font-size: 26px;
     top: 37%;
-    text-transform: uppercase;
     font-weight: bold;
     font-family: arial;
 }
@@ -742,7 +655,9 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 	display:block;
 }
 
-
+#virtualKeyboard #kbDesk {
+	margin: 0;
+}
 
 
 

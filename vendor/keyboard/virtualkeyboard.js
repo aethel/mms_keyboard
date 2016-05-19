@@ -21,11 +21,9 @@ var VirtualKeyboard = new function () {
 		, 53: 'del'
 		, 54: 'ctrl_left'
 		, 55: 'alt_left'
-		, 56: 'mike'
 		, 57: 'space'
 		, 58: 'alt_right'
 		, 59: 'ctrl_right'
-		, 60: 'more'
 	};
 	var v = {
 		'SHIFT': 'shift'
