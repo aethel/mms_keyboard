@@ -579,7 +579,7 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 #virtualKeyboard {
 	background: #1f86c8;
 	width:1080px;
-	height: 387px;
+	height: 355px;
 	padding:10px 8px 10px 7px;
 	border:none;
 }
@@ -627,7 +627,6 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 #kbDesk div#kb_balt_left {
 	margin-left: 92px;
 }
-
 
 #kbDesk div#kb_bshift_left,
 #kbDesk div#kb_bshift_right {
@@ -681,7 +680,6 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 	box-shadow:none;
 }
 
-
 #kbDesk div#kb_bbackspace a,
 #kbDesk div#kb_bbackspace.kbButtonDown a,
 #kbDesk div#kb_bbackspace.kbButtonHover a {
@@ -727,4 +725,30 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 	background-position: -616px center;
 }
 
+
+/* chinese prompt */
+#VirtualKeyboardIME {
+	left: 0 !important;
+}
+
+#VirtualKeyboardIME table,
+#VirtualKeyboardIME table td,
+#VirtualKeyboardIME {
+	width: 100%;
+}
+
+#VirtualKeyboardIME table td.IMEControl {
+	width: 20px;
+}
+#VirtualKeyboardIME table td.IMEContent table tr {
+	text-align: left;
+}
+#VirtualKeyboardIME table td.IMEContent table tr td {
+	text-align: left;
+	width: auto;
+}
+
+#VirtualKeyboardIME td.IMEContent a {
+	background: #1e87c7;
+}
 /*END OF ADJUSTMENTS*/
