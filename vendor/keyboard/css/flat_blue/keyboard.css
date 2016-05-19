@@ -586,8 +586,10 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 
 #kbDesk div#kb_benter {
 	width: 163px;
-	height: 60px;
-	margin-left:0;
+	height: 124px;
+	margin-left: 0;
+	margin-top: -61px;
+	margin-bottom: 0;
 }
 
 #kbDesk div#kb_btab {
@@ -668,9 +670,17 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 #kbDesk div#kb_bbackspace a,
 #kbDesk div#kb_bcaps a,
 #kbDesk div#kb_bdel a,
-#kbDesk div#kb_btab a {
+#kbDesk div#kb_btab a,
+#kbDesk div#kb_benter a {
 	background-image: url(button_set-blueWhite.png) !important;
 }
+
+#kbDesk div#kb_benter a,
+#kbDesk div#kb_benter.kbButtonHover a {
+	background-position: -730px center;
+	box-shadow:none;
+}
+
 
 #kbDesk div#kb_bbackspace a,
 #kbDesk div#kb_bbackspace.kbButtonDown a,
@@ -680,7 +690,7 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 #kbDesk div#kb_btab a,
 #kbDesk div#kb_btab.kbButtonDown a,
 #kbDesk div#kb_btab.kbButtonHover a {
-	background-position: -10px 0;
+	background-position: -10px center;
 }
 #kbDesk div#kb_bcaps a,
 #kbDesk div#kb_bcaps.kbButtonDown a,
