@@ -577,7 +577,7 @@
             </section>
 
 						<!-- pick a cup size screen -->
-						<section class="cup-size">
+						<section class="cup-size is-hidden">
 								<figure class="hero-image">
 										<img src="images/brown-character.png" alt="" class="hero-image__image">
 								</figure>
@@ -689,7 +689,7 @@
 						</section>
 
             <!-- Order summary-->
-            <section class="order-summary is-hidden">
+            <section class="order-summary">
                 <figure class="hero-image">
                     <img src="images/brown-character.png" alt="" class="hero-image__image">
                 </figure>
@@ -702,7 +702,7 @@
                     <li class="horizontal-list__item">
                         <button class="default-btn--half-left">-</button>
                         <span class="summary-items__quantity">2</span>
-                        <button class="default-btn--half-left">+</button>
+                        <button class="default-btn--half-right">+</button>
                     </li>
 										<li class="horizontal-list__item">
 											<figure><img src="cup-small.png" alt="" class="src">
@@ -774,10 +774,18 @@
                         </li>
                     </ul>
                 </section>
-                <button class="default-btn--double">
-                    <span class="default-btn--double__first-line">next step</span>
-                    <span class="default-btn--double__second-line">select cup size</span>
-                </button>
+								<ul class="horizontal-list is-centred">
+									<li class="horizontal-list__item">
+										<button class="default-btn--double">
+											<span class="default-btn--double__first-line">Previous Step</span>
+											<span class="default-btn--double__second-line">Select cup size</span>
+									</button></li>
+									<li class="horizontal-list__item">
+										<button class="default-btn--double">
+												<span class="default-btn--double__second-line">Finalize &amp; print</span>
+										</button>
+									</li>
+								</ul>
             </section>
         </div>
         <script type="text/javascript">
