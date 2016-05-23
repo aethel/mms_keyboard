@@ -1,8 +1,11 @@
 .personalisation-controls {
-	position: relative;
+	position: absolute;
 	overflow: hidden;
 	height: 197px;
 	width: 451px;
+	left: 50%;
+	transform: translateX(-50%);
+
 	&::before {
 		content: '';
 		border-radius: 50%;

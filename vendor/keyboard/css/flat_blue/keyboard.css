@@ -750,5 +750,9 @@ html.VirtualKeyboardPopup, body.VirtualKeyboardPopup {
 
 #VirtualKeyboardIME td.IMEContent a {
 	background: #1e87c7;
+	border-radius: 10px;
+	color: #fff;
+	font-weight: bold;
 }
+
 /*END OF ADJUSTMENTS*/
