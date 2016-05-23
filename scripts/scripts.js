@@ -1,7 +1,14 @@
 "use strict";
 (function() {
     window.addEventListener('load', function() {
-        InitSlider();
+			// var sliders = document.querySelectorAll('.js-viewport-slider');
+			//
+			// 	for (var slider in sliders) {
+			// 		var target = sliders[slider].className.split(" ");
+			// 		console.log(target);
+			// 		InitSlider(target[0]);
+			// 	}
+					InitSlider();
     }, false);
 
 // perosnalisation controls toggle
@@ -38,12 +45,12 @@ var leagueChoice = document.querySelector('.js-league'),
 			}
 		});
 
-}());
+})();
 
 var InitSlider = function() {
-    var nextBtn = document.querySelector('.js-next'),
+    var viewportSlider = document.querySelector('.js-viewport-slider'),
+				nextBtn = document.querySelector('.js-next'),
         prevBtn = document.querySelector('.js-prev'),
-        viewportSlider = document.querySelector('.js-viewport-slider'),
         viewportSliderBtns = viewportSlider.querySelectorAll('.js-slider-btn'),
         viewPortWidth = 880;
 

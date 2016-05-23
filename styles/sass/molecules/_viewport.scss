@@ -5,6 +5,7 @@
 		color: $darker-icon;
 		padding: 0;
 		top: 13px;
+		z-index: 3;
 	}
 	[class*="-prev-"] {
 		left: 23px;
@@ -20,8 +21,6 @@
 	position: relative;
 	height: 110px;
 	.default-btn--double {
-		/* -webkit-filter: url("#blur");
-		filter: url("../../#blur"); */
 		padding: 10px 0 5px;
 		background: $default-blue;
 		color: $light;
