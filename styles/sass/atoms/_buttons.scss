@@ -237,3 +237,17 @@
 		display: none;
 	}
 }
+
+.default-btn--large-caption__first-line {
+	font-size:42px;
+	color: $caption;
+	display: block;
+}
+
+.default-btn--large-caption__second-line {
+	font-size:20px;
+	display: block;
+	width: 103px;
+	text-align: center;
+	margin: -3px auto 0;
+}

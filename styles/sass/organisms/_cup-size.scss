@@ -3,11 +3,19 @@
 		@include row();
 	}
 
+	.main-header {
+	  @include row();
+	  margin: 4px 0 31px;
+	}
+
 	.cup-size-list .horizontal-list__item {
 		@include column(3,8);
 	}
 
 	.horizontal-list__item {
 		margin: 0 10px 30px;
+	}
+	.previews-list {
+		margin: 0 0 27px;
 	}
 }
