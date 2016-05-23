@@ -4,6 +4,7 @@
         InitSlider();
     }, false);
 
+// perosnalisation controls toggle
 var teamOptions = document.querySelector('.personalisation-controls'),
 		teamOptionsUpBtn = teamOptions.querySelector('.js-options-up'),
 		teamOptionsDownBtn = document.querySelector('.options-btn-wrapper .js-options-down');
@@ -18,6 +19,24 @@ var teamOptions = document.querySelector('.personalisation-controls'),
 			teamOptions.classList.toggle('is-up');
 		}, false);
 
+// customistation categories toggle
+var leagueChoice = document.querySelector('.js-league'),
+		teamChoice = document.querySelector('.js-team'),
+		designChoice = document.querySelector('.js-design');
+
+		leagueChoice.addEventListener('click', function(e){
+			if(e.target != e.currentTarget && e.target.nodeName == 'BUTTON') {
+				console.log(e.target.nodeName);
+				teamChoice.classList.remove('is-hidden');
+			}
+		});
+
+		teamChoice.addEventListener('click', function(e){
+			if(e.target != e.currentTarget && e.target.classList.contains('js-slider-btn')) {
+				console.log(e.target.nodeName);
+				designChoice.classList.remove('is-hidden');
+			}
+		});
 
 }());
 
