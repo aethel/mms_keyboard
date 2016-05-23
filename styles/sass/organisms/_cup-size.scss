@@ -1,0 +1,13 @@
+.cup-size {
+	.cup-size-list {
+		@include row();
+	}
+
+	.cup-size-list .horizontal-list__item {
+		@include column(3,8);
+	}
+
+	.horizontal-list__item {
+		margin: 0 10px 30px;
+	}
+}

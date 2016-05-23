@@ -228,3 +228,12 @@
 	position: relative;
 	top: -23px;
 }
+
+.default-btn--large-caption {
+	@extend .default-btn--large-round;
+	width: 327px;
+	height: 327px;
+	&:after {
+		display: none;
+	}
+}
