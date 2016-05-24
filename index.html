@@ -9,119 +9,34 @@
     </head>
     <body>
         <div class="wrapper">
-					<!-- How it works  -->
-					<section class="language-select">
-							<figure class="hero-image">
-									<img src="images/red-character.png" alt="" class="hero-image__image">
-							</figure>
-							<header class="main-header is-centred">
-									<h1 class="main-header__heading">
-										<span>Select Language</span>
-										<figure>
-											<img src="images/language-select-chinese.png" alt="">
-										</figure>
-									</h1>
-							</header>
-							<ul class="horizontal-list is-centred">
-									<li class="horizontal-list__item">
-											<button class="default-btn--double">
-													<span class="default-btn--double__second-line">English</span>
-											</button>
-									</li>
-									<li class="horizontal-list__item">
-											<button class="default-btn--double">
-												<figure>
-													<img src="images/language-chinese-button.png" alt="">
-												</figure>
-											</button>
-									</li>
-							</ul>
-					</section>
-
-					<!-- Introduction screen -->
-					<section class="introduction is-hidden">
-							<figure class="hero-image">
-									<img src="images/red-character.png" alt="" class="hero-image__image">
-							</figure>
-							<header class="main-header">
-									<button class="default-btn--half-right"></button>
-									<h1 class="main-header__heading">How do you want to personalize your M<span class="brand-font">&amp;</span>M's?</h1>
-									<button class="default-btn--half-left">Restart</button>
-							</header>
-							<ul class="categories-list">
-									<li class="categories-list__item categories-list__item--photo">
-											<span class="categories-list__intro">With your</span>
-											<button class="btn--large-icon">Photo</button>
-									</li>
-									<li class="categories-list__item categories-list__item--theme">
-											<span class="categories-list__intro">With a special</span>
-											<button class="btn--large-icon">Theme</button>
-									</li>
-									<li class="categories-list__item categories-list__item--message">
-											<span class="categories-list__intro">With a personal</span>
-											<button class="btn--large-icon">Message</button>
-									</li>
-									<li class="categories-list__item categories-list__item--sport">
-											<span class="categories-list__intro">With your favorite</span>
-											<button class="btn--large-icon">Sport</button>
-									</li>
-							</ul>
-							<section class="previews-list">
-									<header class="previews-list__header">
-											<h2>You can choose up to 4 designs</h2>
-									</header>
-									<ul class="horizontal-list">
-											<li class="horizontal-list__item">
-													<figure class="preview-icon">
-															<button class="default-btn--micro is-visible">
-																	<i class="icon-close-primary"></i>
-															</button>
-															<img src="/images/image-placeholder.png" alt=""/>
-															<button class="default-btn--micro is-visible">
-																	<i class="icon-edit-primary"></i>
-															</button>
-													</figure>
-											</li>
-											<li class="horizontal-list__item">
-													<figure class="preview-icon">
-															<button class="default-btn--micro">
-																	<i class="icon-close-primary"></i>
-															</button>
-															<img src="/images/m-preview.png" alt=""/>
-															<button class="default-btn--micro">
-																	<i class="icon-edit-primary"></i>
-															</button>
-													</figure>
-											</li>
-											<li class="horizontal-list__item">
-													<figure class="preview-icon">
-															<button class="default-btn--micro">
-																	<i class="icon-close-primary"></i>
-															</button>
-															<img src="/images/m-preview.png" alt=""/>
-															<button class="default-btn--micro">
-																	<i class="icon-edit-primary"></i>
-															</button>
-													</figure>
-											</li>
-											<li class="horizontal-list__item">
-													<figure class="preview-icon">
-															<button class="default-btn--micro">
-																	<i class="icon-close-primary"></i>
-															</button>
-															<img src="/images/m-preview.png" alt=""/>
-															<button class="default-btn--micro">
-																	<i class="icon-edit-primary"></i>
-															</button>
-													</figure>
-											</li>
-									</ul>
-							</section>
-							<button class="default-btn--double">
-									<span class="default-btn--double__first-line">next step</span>
-									<span class="default-btn--double__second-line">select cup size</span>
-							</button>
-					</section>
+            <!-- language selection  -->
+            <section class="language-select is-hidden">
+                <figure class="hero-image">
+                    <img src="images/red-character.png" alt="" class="hero-image__image">
+                </figure>
+                <header class="main-header is-centred">
+                    <h1 class="main-header__heading">
+                        <span>Select Language</span>
+                        <figure>
+                            <img src="images/language-select-chinese.png" alt="">
+                        </figure>
+                    </h1>
+                </header>
+                <ul class="horizontal-list is-centred">
+                    <li class="horizontal-list__item">
+                        <button class="default-btn--double">
+                            <span class="default-btn--double__second-line">English</span>
+                        </button>
+                    </li>
+                    <li class="horizontal-list__item">
+                        <button class="default-btn--double">
+                            <figure>
+                                <img src="images/language-chinese-button.png" alt="">
+                            </figure>
+                        </button>
+                    </li>
+                </ul>
+            </section>
 
             <!-- How it works  -->
             <section class="how-it-works is-hidden">
@@ -315,7 +230,7 @@
                     <header>
                         <h2 class="h2">Choose a team</h2>
                     </header>
-                    <div class="viewport-wrapper">
+                    <div class="viewport-wrapper js-viewport-wrapper">
                         <button class="js-prev btn--slider icon-prev-primary is-hidden"></button>
                         <button class="js-next btn--slider icon-next-primary"></button>
                         <div class="viewport">
@@ -418,32 +333,50 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="horizontal-list is-centred personalisation-controls">
-                    <li class="horizontal-list__item">
-                        <button class="default-btn--round-control">Theme</button>
-                    </li>
-                    <li class="horizontal-list__item">
-                        <button class="default-btn--round-control">Photo</button>
-                    </li>
-                    <li class="horizontal-list__item">
-                        <button class="default-btn--round-control js-options-up">
-                            <i class="icon-close-primary"></i>
+                <div class="js-personalisation-controls">
+                    <ul class="horizontal-list is-centred personalisation-controls">
+                        <li class="horizontal-list__item">
+                            <button class="default-btn--round-control">Theme</button>
+                        </li>
+                        <li class="horizontal-list__item">
+                            <button class="default-btn--round-control">Photo</button>
+                        </li>
+                        <li class="horizontal-list__item">
+                            <button class="default-btn--round-control js-options-up">
+                                <i class="icon-close-primary"></i>
+                            </button>
+                        </li>
+                        <li class="horizontal-list__item">
+                            <button class="default-btn--round-control">Message</button>
+                        </li>
+                    </ul>
+                    <div class="options-btn-wrapper is-centred">
+                        <button class="js-options-down default-btn--round-control-large">
+                            <span class="default-btn--round-control-large__first-line">Other</span>
+                            <span class="default-btn--round-control-large__second-line">Options</span>
                         </button>
-                    </li>
-                    <li class="horizontal-list__item">
-                        <button class="default-btn--round-control">Message</button>
-                    </li>
-                </ul>
-                <div class="options-btn-wrapper is-centred">
-                    <button class="js-options-down default-btn--round-control-large">
-                        <span class="default-btn--round-control-large__first-line">Other</span>
-                        <span class="default-btn--round-control-large__second-line">Options</span>
-                    </button>
+                    </div>
                 </div>
             </section>
 
+            <!-- Take photo  -->
+            <section class="take-photo is-hidden">
+                <figure class="hero-image">
+                    <img src="images/red-character.png" alt="" class="hero-image__image">
+                </figure>
+                <header class="main-header">
+                    <button class="default-btn--half-right"></button>
+                    <h1 class="main-header__heading">personalize your M<span class="brand-font">&amp;</span>M's with your photo</h1>
+                    <button class="default-btn--half-left">Restart</button>
+                </header>
+
+                <button class="default-btn--double">
+                    <span class="default-btn--double__second-line">Got it</span>
+                </button>
+            </section>
+
             <!-- Personalise with a special theme -->
-            <section class="theme-personalisation is-hidden">
+            <section class="theme-personalisation">
                 <figure class="hero-image">
                     <img src="images/yellow-character.png" alt="" class="hero-image__image">
                 </figure>
@@ -469,7 +402,97 @@
                     <header>
                         <h2 class="h2">Choose a category</h2>
                     </header>
-                    <div class="viewport-wrapper">
+                    <div class="viewport-wrapper js-viewport-wrapper">
+                        <button class="js-prev btn--slider icon-prev-primary is-hidden"></button>
+                        <button class="js-next btn--slider icon-next-primary"></button>
+                        <div class="viewport">
+                            <ul class="js-viewport-slider horizontal-list viewport__slider">
+                                <li class="horizontal-list__item">
+                                    <button class="default-btn--double js-slider-btn">
+                                        <span class="default-btn--double__first-line">Most</span>
+                                        <span class="default-btn--double__second-line">Popular</span>
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item js-slider-btn">
+                                    <button class="default-btn--double js-slider-btn">
+                                        <span class="default-btn--double__first-line">Sports &amp;</span>
+                                        <span class="default-btn--double__second-line">Recreation</span>
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item js-slider-btn">
+                                    <button class="default-btn js-slider-btn">Spring
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item js-slider-btn">
+                                    <button class="default-btn js-slider-btn">Romance
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item">
+                                    <button class="default-btn--double js-slider-btn">
+                                        <span class="default-btn--double__first-line">Most</span>
+                                        <span class="default-btn--double__second-line">Popular</span>
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item js-slider-btn">
+                                    <button class="default-btn--double js-slider-btn">
+                                        <span class="default-btn--double__first-line">Sports &amp;</span>
+                                        <span class="default-btn--double__second-line">Recreation</span>
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item js-slider-btn">
+                                    <button class="default-btn js-slider-btn">Spring
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item js-slider-btn">
+                                    <button class="default-btn js-slider-btn">Romance
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item">
+                                    <button class="default-btn--double js-slider-btn">
+                                        <span class="default-btn--double__first-line">Most</span>
+                                        <span class="default-btn--double__second-line">Popular</span>
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item js-slider-btn">
+                                    <button class="default-btn--double js-slider-btn">
+                                        <span class="default-btn--double__first-line">Sports &amp;</span>
+                                        <span class="default-btn--double__second-line">Recreation</span>
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item js-slider-btn">
+                                    <button class="default-btn js-slider-btn">Spring
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item js-slider-btn">
+                                    <button class="default-btn js-slider-btn">Romance
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item">
+                                    <button class="default-btn--double js-slider-btn">
+                                        <span class="default-btn--double__first-line">Most</span>
+                                        <span class="default-btn--double__second-line">Popular</span>
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item js-slider-btn">
+                                    <button class="default-btn--double js-slider-btn">
+                                        <span class="default-btn--double__first-line">Sports &amp;</span>
+                                        <span class="default-btn--double__second-line">Recreation</span>
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item js-slider-btn">
+                                    <button class="default-btn js-slider-btn">Spring
+                                    </button>
+                                </li>
+                                <li class="horizontal-list__item js-slider-btn">
+                                    <button class="default-btn js-slider-btn">Romance
+                                    </button>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="viewport-wrapper js-viewport-wrapper">
                         <button class="js-prev btn--slider icon-prev-primary is-hidden"></button>
                         <button class="js-next btn--slider icon-next-primary"></button>
                         <div class="viewport">
@@ -563,7 +586,7 @@
                     <header>
                         <h2 class="h2">Choose a design</h2>
                     </header>
-                    <div class="viewport-wrapper">
+                    <div class="viewport-wrapper js-viewport-wrapper">
                         <button class="js-prev btn--slider icon-prev-primary is-hidden"></button>
                         <button class="js-next btn--slider icon-next-primary"></button>
                         <div class="viewport">
@@ -636,27 +659,29 @@
                         </div>
                     </div>
                 </div>
-                <ul class="horizontal-list is-centred personalisation-controls">
-                    <li class="horizontal-list__item">
-                        <button class="default-btn--round-control">Theme</button>
-                    </li>
-                    <li class="horizontal-list__item">
-                        <button class="default-btn--round-control">Photo</button>
-                    </li>
-                    <li class="horizontal-list__item">
-                        <button class="default-btn--round-control js-options-up">
-                            <i class="icon-close-primary"></i>
+                <div class="js-personalisation-controls">
+                    <ul class="horizontal-list is-centred personalisation-controls">
+                        <li class="horizontal-list__item">
+                            <button class="default-btn--round-control">Theme</button>
+                        </li>
+                        <li class="horizontal-list__item">
+                            <button class="default-btn--round-control">Photo</button>
+                        </li>
+                        <li class="horizontal-list__item">
+                            <button class="default-btn--round-control js-options-up">
+                                <i class="icon-close-primary"></i>
+                            </button>
+                        </li>
+                        <li class="horizontal-list__item">
+                            <button class="default-btn--round-control">Message</button>
+                        </li>
+                    </ul>
+                    <div class="options-btn-wrapper is-centred">
+                        <button class="js-options-down default-btn--round-control-large">
+                            <span class="default-btn--round-control-large__first-line">Other</span>
+                            <span class="default-btn--round-control-large__second-line">Options</span>
                         </button>
-                    </li>
-                    <li class="horizontal-list__item">
-                        <button class="default-btn--round-control">Message</button>
-                    </li>
-                </ul>
-                <div class="options-btn-wrapper is-centred">
-                    <button class="js-options-down default-btn--round-control-large">
-                        <span class="default-btn--round-control-large__first-line">Other</span>
-                        <span class="default-btn--round-control-large__second-line">Options</span>
-                    </button>
+                    </div>
                 </div>
             </section>
 
@@ -942,7 +967,7 @@
                     </button>
                 </div>
                 <div class="is-centred ">
-									<p class="fs-small">want more personalized m<span class="brand-font">&amp;</span>m's?</p>
+                    <p class="fs-small">want more personalized m<span class="brand-font">&amp;</span>m's?</p>
                     <button class="default-btn--double">
                         <span class="default-btn--double__second-line">Start a new order</span>
                     </button>

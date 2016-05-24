@@ -1,70 +1,78 @@
 "use strict";
 (function() {
     window.addEventListener('load', function() {
-			// var sliders = document.querySelectorAll('.js-viewport-slider');
-			//
-			// 	for (var slider in sliders) {
-			// 		var target = sliders[slider].className.split(" ");
-			// 		console.log(target);
-			// 		InitSlider(target[0]);
-			// 	}
-					InitSlider();
+        var sliders = document.querySelectorAll('.js-viewport-wrapper');
+        var sliderArray = [...sliders];
+
+        for (var i = 0; i < sliderArray.length; i++) {
+            InitSlider(sliderArray[i]);
+        }
+
+				var personalisationWrappers = document.querySelectorAll('.js-personalisation-controls');
+
+						for (var personalisationControl of personalisationWrappers){
+							console.log(personalisationControl);
+							InitControls(personalisationControl);
+						}
     }, false);
 
-// perosnalisation controls toggle
-var teamOptions = document.querySelector('.personalisation-controls'),
-		teamOptionsUpBtn = teamOptions.querySelector('.js-options-up'),
-		teamOptionsDownBtn = document.querySelector('.options-btn-wrapper .js-options-down');
+    // perosnalisation controls toggle
+    var InitControls = function(target) {
+            var personalisationWrapper = target,
+                teamOptions = personalisationWrapper.querySelector('.personalisation-controls'),
+                teamOptionsUpBtn = teamOptions.querySelector('.js-options-up'),
+                teamOptionsDownBtn = personalisationWrapper.querySelector('.options-btn-wrapper .js-options-down');
 
-		teamOptionsUpBtn.addEventListener('click', function(){
-			teamOptions.classList.toggle('is-up');
-			teamOptionsDownBtn.parentNode.classList.toggle('is-down');
-		}, false);
+            teamOptionsUpBtn.addEventListener('click', function() {
+                teamOptions.classList.toggle('is-up');
+                teamOptionsDownBtn.parentNode.classList.toggle('is-down');
+            }, false);
 
-		teamOptionsDownBtn.addEventListener('click', function(){
-			this.parentNode.classList.toggle('is-down');
-			teamOptions.classList.toggle('is-up');
-		}, false);
+            teamOptionsDownBtn.addEventListener('click', function() {
+                this.parentNode.classList.toggle('is-down');
+                teamOptions.classList.toggle('is-up');
+            }, false);
+        }
+        // customistation categories toggle
+    var leagueChoice = document.querySelector('.js-league'),
+        teamChoice = document.querySelector('.js-team'),
+        designChoice = document.querySelector('.js-design');
 
-// customistation categories toggle
-var leagueChoice = document.querySelector('.js-league'),
-		teamChoice = document.querySelector('.js-team'),
-		designChoice = document.querySelector('.js-design');
+    leagueChoice.addEventListener('click', function(e) {
+        if (e.target != e.currentTarget && e.target.nodeName == 'BUTTON') {
+            console.log(e.target.nodeName);
+            teamChoice.classList.remove('is-hidden');
+        }
+    });
 
-		leagueChoice.addEventListener('click', function(e){
-			if(e.target != e.currentTarget && e.target.nodeName == 'BUTTON') {
-				console.log(e.target.nodeName);
-				teamChoice.classList.remove('is-hidden');
-			}
-		});
-
-		teamChoice.addEventListener('click', function(e){
-			if(e.target != e.currentTarget && e.target.classList.contains('js-slider-btn')) {
-				console.log(e.target.nodeName);
-				designChoice.classList.remove('is-hidden');
-			}
-		});
+    teamChoice.addEventListener('click', function(e) {
+        if (e.target != e.currentTarget && e.target.classList.contains('js-slider-btn')) {
+            console.log(e.target.nodeName);
+            designChoice.classList.remove('is-hidden');
+        }
+    });
 
 })();
 
-var InitSlider = function() {
-    var viewportSlider = document.querySelector('.js-viewport-slider'),
-				nextBtn = document.querySelector('.js-next'),
-        prevBtn = document.querySelector('.js-prev'),
-        viewportSliderBtns = viewportSlider.querySelectorAll('.js-slider-btn'),
+var InitSlider = function(target) {
+    var viewportWrapper = target,
+        viewportSlider = viewportWrapper.querySelector('.js-viewport-slider'),
+        nextBtn = viewportWrapper.querySelector('.js-next'),
+        prevBtn = viewportWrapper.querySelector('.js-prev'),
+        viewportSliderBtns = viewportWrapper.querySelectorAll('.js-slider-btn'),
         viewPortWidth = 880;
 
     nextBtn.addEventListener('click', function() {
-			this.style.pointerEvents= 'none';
+        this.style.pointerEvents = 'none';
         if (-viewportSlider.offsetLeft > viewportSlider.offsetWidth - viewPortWidth) {
             return;
         } else {
-					prevBtn.classList.remove('is-hidden')
-          viewportSlider.style.left = viewportSlider.offsetLeft - viewPortWidth + 'px';
+            prevBtn.classList.remove('is-hidden')
+            viewportSlider.style.left = viewportSlider.offsetLeft - viewPortWidth + 'px';
         }
     }, false);
     prevBtn.addEventListener('click', function() {
-				this.style.pointerEvents= 'none';
+        this.style.pointerEvents = 'none';
         if (viewportSlider.offsetLeft == 0) {
             return;
         } else {
@@ -80,10 +88,9 @@ var InitSlider = function() {
     }, false);
 
     viewportSlider.addEventListener('transitionend', function() {
-				prevBtn.style.pointerEvents= 'all';
-				nextBtn.style.pointerEvents= 'all';
-        viewportSlider.offsetLeft == 0 ? prevBtn.classList.add('is-hidden') : prevBtn.classList.remove('is-hidden');
-				-viewportSlider.offsetLeft > viewportSlider.offsetWidth - viewPortWidth ? nextBtn.classList.add('is-hidden') : nextBtn.classList.remove('is-hidden');
+        prevBtn.style.pointerEvents = 'all';
+        nextBtn.style.pointerEvents = 'all';
+        viewportSlider.offsetLeft == 0 ? prevBtn.classList.add('is-hidden') : prevBtn.classList.remove('is-hidden'); - viewportSlider.offsetLeft > viewportSlider.offsetWidth - viewPortWidth ? nextBtn.classList.add('is-hidden') : nextBtn.classList.remove('is-hidden');
     }, false);
 };
 
