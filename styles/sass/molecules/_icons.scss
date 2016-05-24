@@ -22,6 +22,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-small-m-primary:before {
+    content: "\e900";
+}
 
 .icon-close-primary::before {
   content: "\e901";
