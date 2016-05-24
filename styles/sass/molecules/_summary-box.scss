@@ -1,0 +1,20 @@
+.summary-box {
+	max-width: 170px;
+	text-align: right;
+}
+
+.summary-box__amount,
+.summary-box__description {
+	color: $light;
+	display: inline-block;
+	margin: 0 0 26px 0;
+}
+
+.summary-box__description {
+	font-size: 20px;
+	margin: 0 19px 0 0;
+}
+
+.summary-box__amount {
+	font-size: 36px;
+}
