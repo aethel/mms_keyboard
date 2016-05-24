@@ -1,6 +1,7 @@
-.summary-box {
-	max-width: 170px;
+.summary-box__list {
+	max-width: 180px;
 	text-align: right;
+	position: relative;
 }
 
 .summary-box__amount,
@@ -12,9 +13,13 @@
 
 .summary-box__description {
 	font-size: 20px;
-	margin: 0 19px 0 0;
 }
 
 .summary-box__amount {
 	font-size: 36px;
+	width: 90px;
+	text-align: left;
+	margin: 0 0 0 19px;
+	position: relative;
+	top: 5px;
 }

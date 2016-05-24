@@ -7,4 +7,20 @@
 	.horizontal-list__item {
 		text-align: center;
 	}
+	.summary-box {
+		overflow: hidden;
+	}
+	.summary-box__list {
+		float: right;
+		margin: 0 96px 0 0;
+	}
+	.total-box {
+		margin: 0 0 142px;
+	}
+	.horizontal-list:not(.summary-items) .horizontal-list__item {
+		margin: 0 10px;
+	}
+	.main-header {
+		margin: 4px 0 152px;
+	}
 }
