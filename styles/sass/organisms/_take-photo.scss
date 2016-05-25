@@ -45,24 +45,15 @@
     margin: 0 0 93px;
   }
   
-  .counter::after {
-    content:'';
-    animation: contentChange 3s linear 1 alternate;
-  }
-  
-  @keyframes contentChange {
-    0% {
-      content: '3';
-    }
-    33% {
-      content: '2';
-    }
-    66% {
-      content: '1';
-    }
-    100% {
-      content: 'smile';
+  &.is-taking-photo {
+    .camera-trigger > *,
+    .zoom-control > *,
+    .default-btn--round,
+    .default-btn--half-left,
+    .default-btn--half-right,
+    [class$="personalisation-controls"],
+    .h2{
+      display:none;
     }
   }
-  
 }
