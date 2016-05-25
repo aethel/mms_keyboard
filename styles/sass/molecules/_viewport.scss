@@ -1,46 +1,48 @@
 .viewport-wrapper {
-	position: relative;
-	.btn--slider {
-		position: absolute;
-		color: $darker-icon;
-		padding: 0;
-		top: 13px;
-		z-index: 3;
-	}
-	[class*="-prev-"] {
-		left: 23px;
-	}
-	[class*="-next-"] {
-		right: 23px;
-	}
+  position: relative;
+  .btn--slider {
+    position: absolute;
+    color: $darker-icon;
+    padding: 0;
+    top: 13px;
+    z-index: 3;
+  }
+  [class*="-prev-"] {
+    left: 23px;
+  }
+  [class*="-next-"] {
+    right: 23px;
+  }
 }
+
 .viewport {
-	width: 880px;
-	margin: 0 auto;
-	overflow: hidden;
-	position: relative;
-	height: 110px;
-	.default-btn--double {
-		padding: 10px 0 5px;
-		background: $default-blue;
-		color: $light;
-		width: 200px;
-		box-shadow: inset 0 2px 2px -1px transparentize($light, 0.25), 0 10px 10px transparentize($dark, 0.75);
-		&.is-active {
-			background: $active-button;
-			box-shadow: inset 0 2px 3px -1px transparentize($light, 0.25), 0 5px 5px transparentize($dark, 0.55);
-		}
-	}
-	.default-btn--double__second-line {
-		line-height: 1;
-	}
-	.horizontal-list {
-		display: flex;
-		flex-wrap: nowrap;
-	}
+  width: 880px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: 110px;
+  .default-btn--double {
+    padding: 10px 0 5px;
+    background: $default-blue;
+    color: $light;
+    width: 200px;
+    box-shadow: inset 0 2px 2px -1px transparentize($light, 0.25), 0 10px 10px transparentize($dark, 0.75);
+    &.is-active {
+      background: $active-button;
+      box-shadow: inset 0 2px 3px -1px transparentize($light, 0.25), 0 5px 5px transparentize($dark, 0.55);
+    }
+  }
+  .default-btn--double__second-line {
+    line-height: 1;
+  }
+  .horizontal-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
+
 .viewport__slider {
-	transition: all 1s ease-in-out;
-	position: absolute;
-	left: 0;
+  transition: all 1s ease-in-out;
+  position: absolute;
+  left: 0;
 }

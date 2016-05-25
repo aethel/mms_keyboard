@@ -7,15 +7,16 @@
   font-family: $default-font;
   font-size: 36px;
   line-height: 1;
-	padding: 12px 0;
+  padding: 12px 0;
   text-transform: uppercase;
 }
 
 .default-btn {
   @extend %default-btn;
-	padding: 15px 0;
+  padding: 15px 0;
   border-radius: 40px;
-  &:active,&:focus {
+  &:active,
+  &:focus {
     background: $active-button;
     box-shadow: inset 0 2px 3px -1px transparentize($light, 0.25), 0 5px 5px transparentize($dark, 0.55);
   }
@@ -36,16 +37,16 @@
 }
 
 .default-btn--half-top {
-	@extend %default-btn;
+  @extend %default-btn;
   border-radius: 50% 50% 0 0;
-	width: 133px;
+  width: 133px;
   height: 126px;
 }
 
 .default-btn--half-bottom {
-	@extend %default-btn;
+  @extend %default-btn;
   border-radius: 0 0 50% 50%;
-	width: 133px;
+  width: 133px;
   height: 126px;
 }
 
@@ -58,12 +59,10 @@
 
 .default-btn--round-double {
   @extend .default-btn--round;
-
   [class^="icon-"] {
     font-size: 28px;
     display: block;
   }
-
   .default-btn--round-first-line {
     font-size: 20px;
   }
@@ -81,44 +80,43 @@
   width: 170px;
   height: 170px;
   border-radius: 50%;
-  &:active,&:focus {
+  &:active,
+  &:focus {
     background: $active-button;
     box-shadow: inset 0 2px 3px -1px transparentize($light, 0.25), 0 10px 10px transparentize($dark, 0.75), 0 0 15px transparentize($active-button, 0.5);
   }
 }
 
 .default-btn--large-round-image {
-	@extend .default-btn--large-round;
-	position: relative;
-
-	&::after {
-		content: '';
-		position: absolute;
-		width: 151px;
-		height: 151px;
-		border-radius: 50%;
-		background: radial-gradient(ellipse at top, $button-icon-light-stop 50%, $button-icon-dark-stop);
-		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
-	}
-
-	&:focus, &:active {
-		&::after {
-			border: 2px solid $default-blue;
-			width: 149px;
-			height: 149px;
-		}
-	}
-
-	.default-btn__image {
-		max-width: 60%;
-		z-index: 2;
-		position: absolute;
-		transform: translate(-50%, -50%);
-		top: 50%;
-		left: 50%;
-	}
+  @extend .default-btn--large-round;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 151px;
+    height: 151px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at top, $button-icon-light-stop 50%, $button-icon-dark-stop);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &:focus,
+  &:active {
+    &::after {
+      border: 2px solid $default-blue;
+      width: 149px;
+      height: 149px;
+    }
+  }
+  .default-btn__image {
+    max-width: 60%;
+    z-index: 2;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
 }
 
 .default-btn--round-control {
@@ -185,83 +183,83 @@
   font-size: 20px;
   display: block;
   line-height: 0.75;
-	pointer-events: none;
+  pointer-events: none;
 }
 
 .default-btn--double__second-line {
   font-size: 36px;
-	line-height: 1;
-	pointer-events: none;
+  line-height: 1;
+  pointer-events: none;
 }
 
-.is-disabled, [disabled="true"] {
+.is-disabled,
+[disabled="true"] {
   background: $disabled !important;
   color: $disabled-text !important;
   box-shadow: none;
-
   [class*="icon"] {
     color: $disabled-text !important;
   }
 }
 
 .btn--slider {
-	border: none;
-	background: none;
-	font-size: 37px;
+  border: none;
+  background: none;
+  font-size: 37px;
 }
 
 .default-btn--counter {
-	@extend .default-btn--round;
-	width: 112px;
-	height: 112px;
-	background: $counter;
-	text-shadow: 0 1px 1px transparentize($dark, 0.65);
-	box-shadow: 0 4px 4px transparentize($dark, 0.65);
+  @extend .default-btn--round;
+  width: 112px;
+  height: 112px;
+  background: $counter;
+  text-shadow: 0 1px 1px transparentize($dark, 0.65);
+  box-shadow: 0 4px 4px transparentize($dark, 0.65);
 }
 
 .default-btn--counter__first-line {
-	font-size: 20px;
-	display: block;
+  font-size: 20px;
+  display: block;
 }
 
 .default-btn--counter__second-line {
-	font-size: 84px;
-	line-height: 0.8;
+  font-size: 84px;
+  line-height: 0.8;
 }
 
 .default-btn--round-control-large {
-	@extend .default-btn--round-control;
-	width: 200px;
-	height: 200px;
-	font-size: 36px;
+  @extend .default-btn--round-control;
+  width: 200px;
+  height: 200px;
+  font-size: 36px;
 }
 
 .default-btn--round-control-large__first-line,
 .default-btn--round-control-large__second-line {
-	display: block;
-	position: relative;
-	top: -23px;
+  display: block;
+  position: relative;
+  top: -23px;
 }
 
 .default-btn--large-caption {
-	@extend .default-btn--large-round;
-	width: 327px;
-	height: 327px;
-	&:after {
-		display: none;
-	}
+  @extend .default-btn--large-round;
+  width: 327px;
+  height: 327px;
+  &:after {
+    display: none;
+  }
 }
 
 .default-btn--large-caption__first-line {
-	font-size:42px;
-	color: $caption;
-	display: block;
+  font-size: 42px;
+  color: $caption;
+  display: block;
 }
 
 .default-btn--large-caption__second-line {
-	font-size:20px;
-	display: block;
-	width: 103px;
-	text-align: center;
-	margin: -3px auto 0;
+  font-size: 20px;
+  display: block;
+  width: 103px;
+  text-align: center;
+  margin: -3px auto 0;
 }

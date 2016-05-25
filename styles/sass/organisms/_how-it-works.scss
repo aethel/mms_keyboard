@@ -1,41 +1,41 @@
 .how-it-works {
-	.main-header__heading {
-		margin: 21px 0 0;
-	}
-	.horizontal-list {
-		margin: 0 0 20px;
-	}
-	.horizontal-list__item {
-		margin: 0 32px 30px;
-	}
-	.brand-font {
-		font-size: 32px;
-	}
-	.default-btn--large-round-image {
-		width: 327px;
-		height: 327px;
-		margin: 0 32px 71px;
-		position: relative;
-		&::after {
-			display: none;
-		}
-		&:active,
-		&:focus {
-			background: $default-blue;
-			box-shadow: inset 0 2px 3px -1px transparentize($light, 0.25), 0 10px 10px transparentize($dark, 0.75);
-		}
-	}
-	.default-btn--counter {
-		position: absolute;
-		top: 80%;
-		left: 50%;
-		transform: translateX(-50%);
-		z-index: 999;
-	}
-	.default-btn__image {
-		max-width: 100%;
-	}
-	.default-btn--double {
-		padding: 19px 0;
-	}
+  .main-header__heading {
+    margin: 21px 0 0;
+  }
+  .horizontal-list {
+    margin: 0 0 20px;
+  }
+  .horizontal-list__item {
+    margin: 0 32px 30px;
+  }
+  .brand-font {
+    font-size: 32px;
+  }
+  .default-btn--large-round-image {
+    width: 327px;
+    height: 327px;
+    margin: 0 32px 71px;
+    position: relative;
+    &::after {
+      display: none;
+    }
+    &:active,
+    &:focus {
+      background: $default-blue;
+      box-shadow: inset 0 2px 3px -1px transparentize($light, 0.25), 0 10px 10px transparentize($dark, 0.75);
+    }
+  }
+  .default-btn--counter {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+  }
+  .default-btn__image {
+    max-width: 100%;
+  }
+  .default-btn--double {
+    padding: 19px 0;
+  }
 }

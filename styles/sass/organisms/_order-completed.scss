@@ -1,31 +1,30 @@
 .order-completed {
-	color: $light;
-	.default-btn--double {
-		padding: 18px 0;
-	}
-	.fs-large {
-		font-size: 48px;
-	}
-	.fs-med {
-		font-size: 36px;
-	}
-	.fs-small {
-		font-size: 20px;
-	}
-	.receipt-pointer {
-		margin:0 0 228px;
-		.fs-large {
-			margin:0 0 41px;
-		}
-	}
-	.next-step {
-		margin:0 0 114px;
-		.fs-med {
-			margin:0 0 41px;
-		}
-	}
-
-	.default-btn--double {
-		margin: 19px auto 0 !important;
-	}
+  color: $light;
+  .default-btn--double {
+    padding: 18px 0;
+  }
+  .fs-large {
+    font-size: 48px;
+  }
+  .fs-med {
+    font-size: 36px;
+  }
+  .fs-small {
+    font-size: 20px;
+  }
+  .receipt-pointer {
+    margin: 0 0 228px;
+    .fs-large {
+      margin: 0 0 41px;
+    }
+  }
+  .next-step {
+    margin: 0 0 114px;
+    .fs-med {
+      margin: 0 0 41px;
+    }
+  }
+  .default-btn--double {
+    margin: 19px auto 0 !important;
+  }
 }
