@@ -22,26 +22,36 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.icon-arrow-down:before {
+    content: "\e90b";
+}
+.icon-arrow-left:before {
+    content: "\e90c";
+}
+.icon-arrow-right:before {
+    content: "\e90d";
+}
+.icon-arrow-up:before {
+    content: "\e90e";
+}
+.icon-camera:before {
+    content: "\e90f";
+}
 .icon-small-m-primary:before {
     content: "\e900";
 }
-
-.icon-close-primary::before {
-  content: "\e901";
+.icon-close-primary:before {
+    content: "\e901";
 }
-
-.icon-edit-primary::before {
-  content: "\e902";
+.icon-edit-primary:before {
+    content: "\e902";
 }
-
-.icon-next-primary::before {
-  content: "\e903";
+.icon-next-primary:before {
+    content: "\e903";
 }
-
-.icon-ok-primary::before {
-  content: "\e904";
+.icon-ok-primary:before {
+    content: "\e904";
 }
-
-.icon-prev-primary::before {
-  content: "\e905";
+.icon-prev-primary:before {
+    content: "\e905";
 }

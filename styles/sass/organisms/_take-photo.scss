@@ -1,0 +1,46 @@
+.take-photo {
+	.photo-wrapper {
+		@include row();
+		margin:0 0 474px;
+	}
+	.camera-trigger,
+	.zoom-control {
+		@include column(2,8);
+		margin: 97px 0 0;
+	}
+	.photo-preview-wrapper {
+		@include column(4,8);
+	}
+	.photo-label {
+		font-size: 36px;
+		color: $light;
+		margin: 0 0 55px;
+	}
+	.icon-camera {
+		font-size: 65px;
+	}
+	.hero-image {
+		margin: 70px 0 57px;
+	}
+		.camera-trigger .default-btn--round-control {
+		width: 150px;
+		height: 150px;
+	}
+	.zoom-control {
+		[class^="default-btn--half"] {
+			width: 100px;
+			height: 100px;
+			font-size: 94px;
+			line-height: 0;
+		}
+	}
+
+	.main-header {
+		margin: 4px 0 12px;
+	}
+
+	.h2 {
+		margin: 0 0 93px;
+	}
+
+}

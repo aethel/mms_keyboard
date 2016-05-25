@@ -35,6 +35,20 @@
   height: 126px;
 }
 
+.default-btn--half-top {
+	@extend %default-btn;
+  border-radius: 50% 50% 0 0;
+	width: 133px;
+  height: 126px;
+}
+
+.default-btn--half-bottom {
+	@extend %default-btn;
+  border-radius: 0 0 50% 50%;
+	width: 133px;
+  height: 126px;
+}
+
 .default-btn--round {
   @extend %default-btn;
   border-radius: 50%;

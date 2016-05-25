@@ -12,7 +12,38 @@ height: 510px;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
-		z-index: -1;
+		z-index: 1;
+	}
+
+.default-btn--round {
+	z-index: 4;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+}
+
+	.default-btn--round:nth-child(1){
+		left: -40px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.default-btn--round:nth-child(2){
+		left: 50%;
+		top: -40px;
+		transform: translateX(-50%);
+	}
+
+	.default-btn--round:nth-child(3){
+		right: -40px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.default-btn--round:nth-child(4){
+		left: 50%;
+		bottom: -40px;
+		transform: translateX(-50%);
 	}
 }
 
@@ -23,5 +54,6 @@ height: 510px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	z-index: 2;
 	transform: translate(-50%,-50%);
 }

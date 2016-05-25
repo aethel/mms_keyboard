@@ -23,6 +23,7 @@
 	.horizontal-list__item:nth-child(4) {
 		position: absolute;
 		margin: 0;
+		z-index: 1;
 	}
 	.horizontal-list__item:nth-child(2),
 	.horizontal-list__item:nth-child(3) {
