@@ -44,7 +44,6 @@
   .h2 {
     margin: 0 0 93px;
   }
-  
   &.is-taking-photo {
     .camera-trigger > *,
     .zoom-control > *,
@@ -52,8 +51,11 @@
     .default-btn--half-left,
     .default-btn--half-right,
     [class$="personalisation-controls"],
-    .h2{
-      display:none;
+    .h2 {
+      display: none;
+    }
+    .main-header {
+      text-align: center;
     }
   }
 }

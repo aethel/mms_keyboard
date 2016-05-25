@@ -1,29 +1,36 @@
 .photo-counter {
   display:none;
   position: absolute;
-  top: 1300px;
+  top: 1185px;
   width: 100%;
 }
 
 .photo-counter__counter::after {
   content: '';
   display: block;
-  animation: contentChange 4s linear 1 alternate;
+  animation: contentChange 3s linear 1 normal forwards;
   font-size: 84px;  
   color: $light;
+  background: none no-repeat center center transparent;  
+  height: 265px;
+  line-height: 3;
 }
 
 @keyframes contentChange {
   0% {
     content: '3';
   }
-  25% {
+  33% {
     content: '2';
   }
-  50% {
+  66% {
     content: '1';
-  }
-  75% {
-    content: 'smile';
+    background: none no-repeat center center transparent;  
+  }  
+  99% {
+    content: 'smile!';   
+  }  
+  100% {
+     background: url(../../../images/flash-burst.png) no-repeat center center transparent;
   }
 }
