@@ -3,11 +3,11 @@
 (function () {
   window.addEventListener('load', function () {
     //get sliders running
-    var sliders = document.querySelectorAll('.js-viewport-wrapper');
+    var sliders = document.querySelectorAll(':not(.theme-personalisation) .js-viewport-wrapper');
     var sliderArray = Array.from(sliders);
 
     for (var i =0;i< sliderArray.length; i++) {
-      InitSlider(sliderArray[i]);
+      InitSlider(sliderArray[i], 880);
     }
 
     // get more options button going
@@ -58,14 +58,14 @@
 
 })();
 
-var InitSlider = function (target) {
+var InitSlider = function (target, width) {
   console.log(target);
   var viewportWrapper = target
     , viewportSlider = viewportWrapper.querySelector('.js-viewport-slider')
     , nextBtn = viewportWrapper.querySelector('.js-next')
     , prevBtn = viewportWrapper.querySelector('.js-prev')
     , viewportSliderBtns = viewportWrapper.querySelectorAll('.js-slider-btn')
-    , viewPortWidth = 880;
+    , viewPortWidth = width;
 
   nextBtn.addEventListener('click', function () {
     this.style.pointerEvents = 'none';
