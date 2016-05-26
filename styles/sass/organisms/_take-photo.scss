@@ -69,7 +69,9 @@
     position: relative;
     height: 600px;
     width: 600px;
-    margin:0 auto;
+    margin: 0 auto 370px;
+    display: none;
+    
     figure {
       position: absolute;
       top: 50%;
@@ -82,9 +84,8 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%,-50%);
+      transform: translate(-50%, -50%);
     }
-   
     .preview-icon--large::after {
       position: absolute;
       top: 50%;
@@ -94,7 +95,6 @@
       height: 366px;
       transform: translate(-50%, -50%);
     }
-    
     .preview-icon--large::before {
       display: none;
     }
@@ -109,13 +109,13 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(0deg);
-     animation: spinner 5s steps(18) infinite normal forwards;
+    animation: spinner 5s steps(18) infinite normal forwards;
   }
 }
 
 @keyframes spinner {
   0% {
-     transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
     transform: translate(-50%, -50%) rotate(360deg);

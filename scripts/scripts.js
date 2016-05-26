@@ -22,7 +22,10 @@
     var photoBtn = document.querySelector('.js-camera-trigger'),
         photoContainer = document.querySelector('.js-take-photo'),
         counterContainer = document.querySelector('.js-photo-counter'),
-        counter = document.querySelector('.js-counter');
+        counter = document.querySelector('.js-counter'),
+        photoWrapper = document.querySelector('.js-photo-wrapper'),
+        photoSpinner = document.querySelector('.js-photo-processing');
+        
     
     photoBtn.addEventListener('click', function() {
       photoContainer.classList.add('is-taking-photo');
@@ -32,6 +35,8 @@
     counter.addEventListener('animationend', function(){
       photoContainer.classList.remove('is-taking-photo');
       counterContainer.classList.remove('is-visible');
+      photoWrapper.classList.add('is-hidden');
+      photoSpinner.classList.add('is-visible');
     });
     
   }, false);
@@ -124,22 +129,3 @@ var classToggler = function (event, targetClass, newClass) {
 
 
 
-
-
-
-// //slider motion blur
-// var filters = document.querySelector('.filters'),
-// 		defs = filters.querySelector('defs'),
-// 		blur = defs.querySelector('#blur'),
-// 		blurFilter = blur.firstElementChild;
-//
-// var blurTargets = document.querySelectorAll('.js-blur');
-// for (var i=0; i<blurTargets; i++){
-// 	var blurClone = blur.cloneNode(true),
-// 			blurId = 'blur' + i;
-// 			blurClone.setAttribute('id',blurId);
-// 			defs.appendChild(blurClone);
-//
-// 			var filter = "url(#"+blurId")";
-// 			blurTargets[i].setAttribute('style','filter: -webkit-filter:'+filter+',filter:'+filter);
-// }
