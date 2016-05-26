@@ -196,7 +196,7 @@
       </figure>
       <header class="main-header">
         <button class="default-btn--half-right"></button>
-        <h1 class="main-header__heading">personalize your M<span class="brand-font">&amp;</span>M's with a personal message</h1>
+        <h1 class="main-header__heading">personalize your M<span class="brand-font">&amp;</span>M's with a favorite message</h1>
         <button class="default-btn--half-left">Restart</button>
       </header>
 
@@ -362,7 +362,7 @@
     </section>
 
     <!-- Take photo  -->
-    <section class="take-photo js-take-photo">
+    <section class="take-photo js-take-photo is-hidden">
       <figure class="hero-image">
         <img src="images/green-character.png" alt="" class="hero-image__image">
       </figure>
@@ -440,6 +440,58 @@
       </div>
 
     </section>
+
+    <!-- Confirm photo  -->
+    <section class="confirm-photo is-hidden">
+      <figure class="hero-image">
+        <img src="images/green-character.png" alt="" class="hero-image__image">
+      </figure>
+      <div class="preview-icon--large">
+        <button class="default-btn--round-double" disabled="true">
+          <i class="icon-close-primary"></i>
+          <span class="default-btn--round-first-line">Clear</span>
+        </button>
+        <figure class="is-centred photo-wrapper">
+          <img src="/images/m-preview-large.png" alt="">
+        </figure>
+        <button class="default-btn--round-double">
+          <i class="icon-ok-primary"></i>
+          <span class="default-btn--round-first-line">Ok</span>
+        </button>
+      </div>
+      <header class="main-header">
+        <button class="default-btn--half-right"></button>
+        <h1 class="main-header__heading">personalize your M<span class="brand-font">&amp;</span>M's with your photo</h1>
+        <button class="default-btn--half-left">Restart</button>
+      </header>
+      <p class="h2 is-centred">one design only &ndash; additional charge $1.00</p>
+      <div class="js-personalisation-controls">
+        <ul class="horizontal-list is-centred personalisation-controls">
+          <li class="horizontal-list__item">
+            <button class="default-btn--round-control">Theme</button>
+          </li>
+          <li class="horizontal-list__item">
+            <button class="default-btn--round-control">Photo</button>
+          </li>
+          <li class="horizontal-list__item">
+            <button class="default-btn--round-control js-options-up">
+              <i class="icon-close-primary"></i>
+            </button>
+          </li>
+          <li class="horizontal-list__item">
+            <button class="default-btn--round-control">Message</button>
+          </li>
+        </ul>
+        <div class="options-btn-wrapper is-centred">
+          <button class="js-options-down default-btn--round-control-large">
+            <span class="default-btn--round-control-large__first-line">Other</span>
+            <span class="default-btn--round-control-large__second-line">Options</span>
+          </button>
+        </div>
+      </div>
+
+    </section>
+
 
     <!-- Personalise with a special theme -->
     <section class="theme-personalisation is-hidden">
@@ -924,9 +976,9 @@
     </section>
 
     <!-- Order completed-->
-    <section class="order-completed is-hidden">
+    <section class="order-completed">
       <figure class="hero-image">
-        <img src="images/brown-character.png" alt="" class="hero-image__image">
+        <img src="images/group.png" alt="" class="hero-image__image">
       </figure>
       <header class="main-header is-centred">
         <h1 class="main-header__heading">Thank you for your order</h1>
@@ -940,7 +992,7 @@
         <p class="fs-med">take your receipt to</p>
         <button class="default-btn--counter">
           <span class="default-btn--counter__first-line">Step</span>
-          <span class="default-btn--counter__second-line">9</span>
+          <span class="default-btn--counter__second-line">2</span>
         </button>
       </div>
       <div class="is-centred ">

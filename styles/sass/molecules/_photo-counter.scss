@@ -16,6 +16,7 @@
   line-height: 3;
 }
 
+
 @keyframes contentChange {
   0% {
     content: '3';
@@ -28,6 +29,7 @@
     background: none no-repeat center center transparent;  
   }  
   99% {
+    border: none;
     content: 'smile!';   
   }  
   100% {
