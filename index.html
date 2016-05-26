@@ -10,7 +10,22 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper js-wrapper">
+   <div class="modal js-modal is-centred">
+     <p class="modal__content js-modal-message"></p>
+     <ul class="horizontal-list js-modal-buttons">
+       <li class="horizontal-list__item">
+         <button class="default-btn--double">
+          <span class="default-btn--double__second-line js-modal-lbutton">select your cup</span>
+        </button>
+       </li>
+       <li class="horizontal-list__item">
+         <button class="default-btn--double">
+          <span class="default-btn--double__second-line js-modal-rbutton">select your cup</span>
+        </button>
+       </li>
+     </ul>
+   </div>
     <!-- language selection  -->
     <section class="language-select is-hidden">
       <figure class="hero-image">
@@ -1058,6 +1073,9 @@
     VirtualKeyboard.toggle('text', 'keyboard');
   </script>
   <script type="text/javascript" src="/scripts/scripts.js"></script>
+  <script type="text/javascript" src="/scripts/take-photo.js"></script>
+  <script type="text/javascript" src="/scripts/theme-customisation.js"></script>
+  <script type="text/javascript" src="/scripts/alerts.js"></script>
 
 </body>
 

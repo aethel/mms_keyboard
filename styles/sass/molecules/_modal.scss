@@ -1,0 +1,36 @@
+.modal {
+  @extend %default-btn;
+  @include row();
+  position: absolute;
+  width: calc(100% - 20px);
+  border-radius: 500px;
+  display: none;
+  top: 50%;
+  z-index: 9999;
+  margin:0 10px;
+  .default-btn--double {
+    padding: 18px 0;
+  }
+  .modal__content {
+    @include column(6, 8);
+    font-size: 84px;
+    margin: 40px 0;
+  }
+  .horizontal-list {
+    margin: 0 0 40px;
+  }
+  .horizontal-list__item {
+    margin: 0 10px;
+  }
+}
+
+.has-overlay:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.85);
+  content: '';
+  z-index: 9998;
+}
