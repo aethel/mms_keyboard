@@ -1,0 +1,23 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 552.26 560">
+  <title>spinner</title>
+  <g>
+    <circle cx="276.13" cy="25" r="25" fill="#703d18"/>
+    <circle cx="188.92" cy="40.38" r="25" transform="translate(-2.42 67.05) rotate(-20)" fill="#c42126"/>
+    <circle cx="112.22" cy="84.66" r="25" transform="translate(-28.16 91.94) rotate(-40)" fill="#c42126"/>
+    <circle cx="55.29" cy="152.5" r="25" transform="matrix(0.5, -0.87, 0.87, 0.5, -104.42, 124.14)" fill="#c42126"/>
+    <circle cx="25" cy="235.72" r="25" transform="translate(-211.48 219.41) rotate(-80)" fill="#ec6e2a"/>
+    <circle cx="25" cy="324.28" r="25" transform="translate(-55.93 9.27) rotate(-10)" fill="#ec6e2a"/>
+    <circle cx="55.29" cy="407.5" r="25" transform="translate(-196.34 82.24) rotate(-30)" fill="#ec6e2a"/>
+    <circle cx="112.22" cy="475.34" r="25" transform="translate(-324.05 255.76) rotate(-50)" fill="#ffcc2f"/>
+    <circle cx="188.92" cy="519.62" r="25" transform="translate(-363.98 519.42) rotate(-70)" fill="#ffcc2f"/>
+    <circle cx="276.13" cy="535" r="25" fill="#ffcc2f"/>
+    <circle cx="363.35" cy="519.62" r="25" transform="translate(-155.81 155.61) rotate(-20)" fill="#357f3d"/>
+    <circle cx="440.04" cy="475.34" r="25" transform="translate(-202.59 394.06) rotate(-40)" fill="#357f3d"/>
+    <circle cx="496.97" cy="407.5" r="25" transform="translate(-104.42 634.14) rotate(-60)" fill="#357f3d"/>
+    <circle cx="527.26" cy="324.28" r="25" transform="translate(116.35 787.22) rotate(-80)" fill="#164986"/>
+    <circle cx="527.26" cy="235.72" r="25" transform="translate(-32.92 95.14) rotate(-10)" fill="#164986"/>
+    <circle cx="496.97" cy="152.5" r="25" transform="translate(-9.67 268.91) rotate(-30)" fill="#164986"/>
+    <circle cx="440.04" cy="84.66" r="25" transform="translate(92.34 367.33) rotate(-50)" fill="#703d18"/>
+    <circle cx="363.35" cy="40.38" r="25" transform="translate(201.13 368) rotate(-70)" fill="#703d18"/>
+  </g>
+</svg>
