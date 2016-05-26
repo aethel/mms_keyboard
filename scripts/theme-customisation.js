@@ -1,7 +1,8 @@
 "use strict";
 
 (function () {
-
+var designSection = document.querySelector('.theme-personalisation');
+  InitSlider(designSection);
 
 })();
 
@@ -14,7 +15,7 @@ var InitSlider = function (target) {
     , nextBtn = viewportWrapper.querySelector('.js-next')
     , prevBtn = viewportWrapper.querySelector('.js-prev')
     , viewportSliderBtns = viewportWrapper.querySelectorAll('.js-slider-btn')
-    , viewPortWidth = 880;
+    , viewPortWidth = 950;
 
   nextBtn.addEventListener('click', function () {
     this.style.pointerEvents = 'none';

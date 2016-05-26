@@ -31,8 +31,8 @@
   }
 
 
-  toggleModal(modalMessages.choiceSwitch);
-  toggleModal();
+//  toggleModal(modalMessages.choiceSwitch);
+//  toggleModal();
 })();
 
 function toggleModal(context) {
