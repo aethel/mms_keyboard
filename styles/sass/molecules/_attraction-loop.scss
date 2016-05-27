@@ -1,0 +1,19 @@
+.attract-loop {
+  position: absolute;
+  z-index: 9;
+  height: 1920px;
+  &:after {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    background: $dark;
+  }
+}
+
+.attract-loop__content {
+  position: relative;
+  z-index: 9;
+  width: 100%;
+}

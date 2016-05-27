@@ -1,60 +1,44 @@
 "use strict";
-
 (function () {
   window.addEventListener('load', function () {
+
     //get sliders running
     var sliders = document.querySelectorAll(':not(.theme-personalisation) .js-viewport-wrapper');
     var sliderArray = Array.from(sliders);
 
-    for (var i =0;i< sliderArray.length; i++) {
+    for (var i = 0; i < sliderArray.length; i++) {
       InitSlider(sliderArray[i], 880);
     }
 
     // get more options button going
     var personalisationWrappers = document.querySelectorAll('.js-personalisation-controls');
     var personalisationControlArray = Array.from(personalisationWrappers);
-    
-    for (var i =0;i< personalisationControlArray.length; i++) {
+
+    for (var i = 0; i < personalisationControlArray.length; i++) {
       InitControls(personalisationControlArray[i]);
     }
-
   }, false);
+
+
 
   // personalisation controls toggle
   var InitControls = function (target) {
-      var personalisationWrapper = target
-        , teamOptions = personalisationWrapper.querySelector('.personalisation-controls')
-        , teamOptionsUpBtn = teamOptions.querySelector('.js-options-up')
-        , teamOptionsDownBtn = personalisationWrapper.querySelector('.options-btn-wrapper .js-options-down');
+    var personalisationWrapper = target
+      , personalOptions = personalisationWrapper.querySelector('.personalisation-controls')
+      , personalOptionsUpBtn = personalOptions.querySelector('.js-options-up')
+      , personalOptionsDownBtn = personalisationWrapper.querySelector('.options-btn-wrapper .js-options-down');
 
-      teamOptionsUpBtn.addEventListener('click', function () {
-        teamOptions.classList.toggle('is-up');
-        teamOptionsDownBtn.parentNode.classList.toggle('is-down');
-      }, false);
+    personalOptionsUpBtn.addEventListener('click', function () {
+      personalOptions.classList.toggle('is-up');
+      personalOptionsDownBtn.parentNode.classList.toggle('is-down');
+    }, false);
 
-      teamOptionsDownBtn.addEventListener('click', function () {
-        this.parentNode.classList.toggle('is-down');
-        teamOptions.classList.toggle('is-up');
-      }, false);
-    }
-    // customistation categories toggle
-  var leagueChoice = document.querySelector('.js-league')
-    , teamChoice = document.querySelector('.js-team')
-    , designChoice = document.querySelector('.js-design');
+    personalOptionsDownBtn.addEventListener('click', function () {
+      this.parentNode.classList.toggle('is-down');
+      personalOptions.classList.toggle('is-up');
+    }, false);
+  }
 
-  leagueChoice.addEventListener('click', function (e) {
-    if (e.target != e.currentTarget && e.target.nodeName == 'BUTTON') {
-      console.log(e.target.nodeName);
-      teamChoice.classList.remove('is-hidden');
-    }
-  });
-
-  teamChoice.addEventListener('click', function (e) {
-    if (e.target != e.currentTarget && e.target.classList.contains('js-slider-btn')) {
-      console.log(e.target.nodeName);
-      designChoice.classList.remove('is-hidden');
-    }
-  });
 
 })();
 
@@ -89,7 +73,7 @@ var InitSlider = function (target, width) {
     for (var i = 0; i < viewportSliderBtns.length; i++) {
       viewportSliderBtns[i].classList.remove('is-active');
     }
-    classToggler(e, 'js-slider-btn', 'is-active');
+    classToggler(e, '.js-slider-btn', 'is-active');
   }, false);
 
   viewportSlider.addEventListener('transitionend', function () {
@@ -105,6 +89,4 @@ var classToggler = function (event, targetClass, newClass) {
     event.target.classList.toggle(newClass);
   }
 }
-
-
 

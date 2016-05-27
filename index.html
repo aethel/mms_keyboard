@@ -10,6 +10,11 @@
 </head>
 
 <body>
+ <!-- attract loop-->
+  <section class="attract-loop js-attract-loop">
+     <video class="attract-loop__content" src="videos/attract_loop.mp4" autoplay loop></video>
+   </section>
+  
   <div class="wrapper js-wrapper">
    <div class="modal js-modal is-centred">
      <p class="modal__content js-modal-message"></p>
@@ -26,8 +31,9 @@
        </li>
      </ul>
    </div>
+   
     <!-- language selection  -->
-    <section class="language-select is-hidden">
+    <section class="language-select js-language-select is-hidden">
       <figure class="hero-image">
         <img src="images/red-character.png" alt="" class="hero-image__image">
       </figure>
@@ -39,7 +45,7 @@
                         </figure>
                     </h1>
       </header>
-      <ul class="horizontal-list is-centred">
+      <ul class="horizontal-list is-centred js-language-menu">
         <li class="horizontal-list__item">
           <button class="default-btn--double">
             <span class="default-btn--double__second-line">English</span>
@@ -56,7 +62,7 @@
     </section>
 
     <!-- How it works  -->
-    <section class="how-it-works is-hidden">
+    <section class="how-it-works js-how-it-works is-hidden">
       <figure class="hero-image">
         <img src="images/red-character.png" alt="" class="hero-image__image">
       </figure>
@@ -126,13 +132,13 @@
           <p class="h2">Take them home</p>
         </li>
       </ul>
-      <button class="default-btn--double">
+      <button class="default-btn--double js-next-section">
         <span class="default-btn--double__second-line">Got it</span>
       </button>
     </section>
 
     <!-- Introduction screen -->
-    <section class="introduction is-hidden">
+    <section class="introduction js-introduction is-hidden">
       <figure class="hero-image">
         <img src="images/red-character.png" alt="" class="hero-image__image">
       </figure>
@@ -144,19 +150,19 @@
       <ul class="categories-list">
         <li class="categories-list__item categories-list__item--photo">
           <span class="categories-list__intro">With your</span>
-          <button class="btn--large-icon">Photo</button>
+          <button class="btn--large-icon js-goto-photo">Photo</button>
         </li>
         <li class="categories-list__item categories-list__item--theme">
           <span class="categories-list__intro">With a special</span>
-          <button class="btn--large-icon">Theme</button>
+          <button class="btn--large-icon js-goto-theme">Theme</button>
         </li>
         <li class="categories-list__item categories-list__item--message">
           <span class="categories-list__intro">With a personal</span>
-          <button class="btn--large-icon">Message</button>
+          <button class="btn--large-icon js-goto-message">Message</button>
         </li>
         <li class="categories-list__item categories-list__item--sport">
           <span class="categories-list__intro">With your favorite</span>
-          <button class="btn--large-icon">Sport</button>
+          <button class="btn--large-icon js-goto-team">Sport</button>
         </li>
       </ul>
       <section class="previews-list">
@@ -210,14 +216,14 @@
           </li>
         </ul>
       </section>
-      <button class="default-btn--double">
+      <button class="default-btn--double js-next-section">
         <span class="default-btn--double__first-line">next step</span>
         <span class="default-btn--double__second-line">select cup size</span>
       </button>
     </section>
 
     <!-- Pick a sports team view-->
-    <section class="team-personalisation is-hidden">
+    <section class="team-personalisation js-team-personalisation is-hidden">
       <figure class="hero-image">
         <img src="images/orange-character.png" alt="" class="hero-image__image">
       </figure>
@@ -233,7 +239,7 @@
           <span class="default-btn--round-first-line">Clear</span>
         </button>
         <img src="/images/team-placeholder.png" alt="" class="preview-icon--large__image" />
-        <button class="default-btn--round-double">
+        <button class="default-btn--round-double js-next-section">
           <i class="icon-ok-primary"></i>
           <span class="default-btn--round-first-line">Ok</span>
         </button>
@@ -478,7 +484,7 @@
     </section>
 
     <!-- Confirm photo  -->
-    <section class="confirm-photo is-hidden">
+    <section class="confirm-photo js-confirm-photo is-hidden">
       <figure class="hero-image">
         <img src="images/green-character.png" alt="" class="hero-image__image">
       </figure>
@@ -490,7 +496,7 @@
         <figure class="is-centred photo-wrapper">
           <img src="/images/m-preview-large.png" alt="">
         </figure>
-        <button class="default-btn--round-double" disabled="true">
+        <button class="default-btn--round-double js-next-section" disabled="true">
           <i class="icon-ok-primary"></i>
           <span class="default-btn--round-first-line">Ok</span>
         </button>
@@ -560,7 +566,7 @@
 
 
     <!-- Personalise with a special theme -->
-    <section class="theme-personalisation is-hidden">
+    <section class="theme-personalisation js-theme-personalisation is-hidden">
       <figure class="hero-image">
         <img src="images/yellow-character.png" alt="" class="hero-image__image">
       </figure>
@@ -781,7 +787,7 @@
     </section>
 
     <!-- personalize a message-->
-    <section class="message-personalisation">
+    <section class="message-personalisation js-message-personalisation is-hidden">
       <figure class="hero-image">
         <img src="images/blue-character.png" alt="" class="hero-image__image">
       </figure>
@@ -811,7 +817,7 @@
     </section>
 
     <!-- pick a cup size screen -->
-    <section class="cup-size is-hidden">
+    <section class="cup-size js-cup-size is-hidden">
       <figure class="hero-image">
         <img src="images/brown-character.png" alt="" class="hero-image__image">
       </figure>
@@ -908,13 +914,13 @@
 
       <ul class="horizontal-list is-centred">
         <li class="horizontal-list__item">
-          <button class="default-btn--double">
+          <button class="default-btn--double js-previous-section">
             <span class="default-btn--double__first-line">Previous Step</span>
             <span class="default-btn--double__second-line">Personalize</span>
           </button>
         </li>
         <li class="horizontal-list__item">
-          <button class="default-btn--double">
+          <button class="default-btn--double js-next-section">
             <span class="default-btn--double__first-line">next step</span>
             <span class="default-btn--double__second-line">Review order</span>
           </button>
@@ -924,7 +930,7 @@
     </section>
 
     <!-- Order summary-->
-    <section class="order-summary is-hidden">
+    <section class="order-summary js-order-summary is-hidden">
       <figure class="hero-image">
         <img src="images/brown-character.png" alt="" class="hero-image__image">
       </figure>
@@ -1028,12 +1034,12 @@
       </section>
       <ul class="horizontal-list is-centred">
         <li class="horizontal-list__item">
-          <button class="default-btn--double">
+          <button class="default-btn--double js-previous-section">
             <span class="default-btn--double__first-line">Previous Step</span>
             <span class="default-btn--double__second-line">Select cup size</span>
           </button>
         </li>
-        <li class="horizontal-list__item">
+        <li class="horizontal-list__item js-next-section">
           <button class="default-btn--double">
             <span class="default-btn--double__second-line">Finalize &amp; print</span>
           </button>
@@ -1042,7 +1048,7 @@
     </section>
 
     <!-- Order completed-->
-    <section class="order-completed is-hidden">
+    <section class="order-completed js-order-completed is-hidden">
       <figure class="hero-image">
         <img src="images/group.png" alt="" class="hero-image__image">
       </figure>
@@ -1063,7 +1069,7 @@
       </div>
       <div class="is-centred ">
         <p class="fs-small">want more personalized m<span class="brand-font">&amp;</span>m's&trade;?</p>
-        <button class="default-btn--double">
+        <button class="default-btn--double js-next-section">
           <span class="default-btn--double__second-line">Start a new order</span>
         </button>
       </div>
@@ -1075,6 +1081,9 @@
   <script type="text/javascript" src="/scripts/scripts.js"></script>
   <script type="text/javascript" src="/scripts/take-photo.js"></script>
   <script type="text/javascript" src="/scripts/theme-customisation.js"></script>
+  <script type="text/javascript" src="/scripts/team-customisation.js"></script>
+  <script type="text/javascript" src="/scripts/attract-loop.js"></script>
+  <script type="text/javascript" src="/scripts/section-switching.js"></script>
   <script type="text/javascript" src="/scripts/alerts.js"></script>
 
 </body>

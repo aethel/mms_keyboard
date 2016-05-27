@@ -9,6 +9,9 @@
   line-height: 1;
   padding: 12px 0;
   text-transform: uppercase;
+  > * {
+    pointer-events: none;
+  }
 }
 
 .default-btn {
@@ -164,6 +167,9 @@
     border-radius: 50%;
     margin: -55px 0 0;
   }
+  > * {
+    pointer-events: none;
+  }
 }
 
 .default-btn--double {
@@ -177,6 +183,9 @@
   text-transform: uppercase;
   font-family: $default-font;
   display: block;
+  > * {
+    pointer-events: none;
+  }
 }
 
 .default-btn--double__first-line {
