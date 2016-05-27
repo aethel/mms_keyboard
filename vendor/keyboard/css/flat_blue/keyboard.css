@@ -277,14 +277,16 @@ body.VirtualKeyboardPopup {
   background-position: -86px -114px;
 }
 
+/*
 #kbDesk div#kb_bshift_left.kbButtonHover a,
 #kbDesk div#kb_bshift_right.kbButtonHover a {
   background-position: -86px -152px;
 }
+*/
 
-#kbDesk div#kb_bshift_left.kbButtonDown a,
-#kbDesk div#kb_bshift_right.kbButtonDown a {
-  background-position: -86px -190px;
+#kbDesk div#kb_bshift_left.kbButtonDown.kbButtonHover a,
+#kbDesk div#kb_bshift_right.kbButtonDown.kbButtonHover a {
+  background-position: -201px -152px;
 }
 
 #kbDesk div#kb_balt_left,
@@ -656,7 +658,7 @@ body.VirtualKeyboardPopup {
 #kbDesk div.kbButton a {
   box-shadow: inset 0 2px 2px -2px rgba(255, 255, 255, 0.7), 0 2px 5px -1px rgba(0, 0, 0, 0.3);
   background-repeat: no-repeat !important;
-  background-color: #1f86c8 !important;
+  background-color: #1f86c8;
   background-image: none;
   display: block;
   height: 100%;
@@ -676,7 +678,7 @@ body.VirtualKeyboardPopup {
 
 #kbDesk div.kbButton.kbButtonHover a,
 #kbDesk div.kbButton.kbButtonDown a {
-  background-color: #57cd7f !important;
+  background-color: #57cd7f;
 }
 
 
@@ -729,10 +731,6 @@ body.VirtualKeyboardPopup {
   width: 138px;
 }
 
-#kbDesk div#kb_bshift_left.kbButtonDown a,
-#kbDesk div#kb_bshift_right.kbButtonDown a {
-  background-position: -86px -76px;
-}
 
 #virtualKeyboard.ZH div.kbButton span {
   font-family: MingLiU, SimSun, "Arial Unicode MS";
@@ -793,25 +791,38 @@ body.VirtualKeyboardPopup {
 #kbDesk div#kb_btab a
 {
 	background-position: -10px -30px;
+  background-color: #1f86c8;
 }
-#kbDesk div#kb_btab.kbButtonDown a,
-#kbDesk div#kb_btab.kbButtonHover a {
+#kbDesk div#kb_btab.kbButtonHover a
+{
 	background-position: -10px -152px;
+  background-color: #57cd7f;
 }
-#kbDesk div#kb_bcaps a{
+#kbDesk div#kb_bcaps a,
+#kbDesk div#kb_bcaps.kbButtonHover a
+{
 	background-position: -99px -30px;
+  background-color: #1f86c8;
 }
-#kbDesk div#kb_bcaps.kbButtonDown a,
-#kbDesk div#kb_bcaps.kbButtonHover a {
+#kbDesk div#kb_bcaps.kbButtonDown.kbButtonHover a,
+#kbDesk div#kb_bcaps.kbButtonDown a
+ {
 	background-position: -99px -152px;
+   background-color: #57cd7f;
 }
 #kbDesk div#kb_bshift_left a,
+#kbDesk div#kb_bshift_left.kbButtonHover a,
+#kbDesk div#kb_bshift_right.kbButtonHover a,
 #kbDesk div#kb_bshift_right a {
 	background-position: -201px -30px;
+  background-color: #1f86c8;
 }
-#kbDesk div#kb_bshift_left.kbButtonHover a,
-#kbDesk div#kb_bshift_right.kbButtonHover a {
+#kbDesk div#kb_bshift_left.kbButtonHover.kbButtonDown a,
+#kbDesk div#kb_bshift_right.kbButtonHover.kbButtonDown a,
+#kbDesk div#kb_bshift_left.kbButtonDown a,
+#kbDesk div#kb_bshift_right.kbButtonDown a {
 	background-position: -201px -152px;
+  background-color: #57cd7f;
 }
 #kbDesk div#kb_bdel a
 {
