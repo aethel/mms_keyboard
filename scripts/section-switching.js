@@ -55,57 +55,71 @@
     , gotoMessage = introduction.querySelector('.js-goto-message')
     , gotoTeam = introduction.querySelector('.js-goto-team');
 
-  
-  gotoPhoto.addEventListener('click',function(){
+
+  gotoPhoto.addEventListener('click', function () {
     SwitchSection(takePhoto)
-  }, false);  
-  gotoTheme.addEventListener('click',function(){
+  }, false);
+  gotoTheme.addEventListener('click', function () {
     SwitchSection(pickTheme)
-  }, false);  
-  gotoMessage.addEventListener('click',function(){
+  }, false);
+  gotoMessage.addEventListener('click', function () {
     SwitchSection(pickMessage)
-  }, false);  
-  gotoTeam.addEventListener('click',function(){
+  }, false);
+  gotoTeam.addEventListener('click', function () {
     SwitchSection(pickTeam)
   }, false);
-    
+
   //switch from confirm photo page  
   var confirmPhotoBtn = confirmPhoto.querySelector('.js-next-section');
   confirmPhotoBtn.addEventListener('click', function (e) {
     SwitchSection(introduction);
   }, false);
-  
+
   //switch from take photo page  
   var takePhotoBtn = takePhoto.querySelector('.js-photo-processing');
   takePhotoBtn.addEventListener('click', function (e) {
     SwitchSection(confirmPhoto);
   }, false);
-  
+
   //switch from cup size page  
   var personaliseBtn = cupSize.querySelector('.js-previous-section');
   personaliseBtn.addEventListener('click', function (e) {
     SwitchSection(introduction);
   }, false);
-  
+
   var orderReviewBtn = cupSize.querySelector('.js-next-section');
   orderReviewBtn.addEventListener('click', function (e) {
     SwitchSection(orderSummary);
   }, false);
-  
+
   //switch from order review page  
   var cupSizeBtn = orderSummary.querySelector('.js-previous-section');
   cupSizeBtn.addEventListener('click', function (e) {
     SwitchSection(cupSize);
   }, false);
-  
+
   var finaliseBtn = orderSummary.querySelector('.js-next-section');
   finaliseBtn.addEventListener('click', function (e) {
     SwitchSection(orderCompleted);
   }, false);
-  
-    //switch from order completed page  
+
+  //switch from order completed page  
   var newOrderBtn = orderCompleted.querySelector('.js-next-section');
   newOrderBtn.addEventListener('click', function (e) {
     SwitchSection(introduction);
   }, false);
+
+
+  //restart button
+  var restartBtn = document.querySelectorAll('.main-header .default-btn--half-left')
+    , restartBtnArray = Array.from(restartBtn);
+  
+  for (var i = 0; i < restartBtnArray.length; i++) {
+    restartBtnArray[i].addEventListener('click', function (e) {
+      introduction.classList.remove('is-hidden');
+      this.parentNode.parentNode.classList.add('is-hidden');
+    }, false);
+  }
+
+
 })();
