@@ -116,8 +116,9 @@
   
   for (var i = 0; i < restartBtnArray.length; i++) {
     restartBtnArray[i].addEventListener('click', function (e) {
-      introduction.classList.remove('is-hidden');
+      introduction.classList.remove('is-hidden');      
       this.parentNode.parentNode.classList.add('is-hidden');
+      currentSection = introduction;
     }, false);
   }
 

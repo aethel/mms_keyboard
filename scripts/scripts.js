@@ -73,7 +73,8 @@ var InitSlider = function (target, width) {
     for (var i = 0; i < viewportSliderBtns.length; i++) {
       viewportSliderBtns[i].classList.remove('is-active');
     }
-    classToggler(e, '.js-slider-btn', 'is-active');
+    console.log(e.target, e.currentTarget);
+    e.target.classList.add('is-active');
   }, false);
 
   viewportSlider.addEventListener('transitionend', function () {

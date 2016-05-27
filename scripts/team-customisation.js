@@ -13,7 +13,7 @@
   });
 
   teamChoice.addEventListener('click', function (e) {
-    if (e.target != e.currentTarget && e.target.classList.contains('.js-slider-btn')) {
+    if (e.target != e.currentTarget && e.target.nodeName == 'BUTTON') {    
       designChoice.classList.remove('is-hidden');
     }
   });
