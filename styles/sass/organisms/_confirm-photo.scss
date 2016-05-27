@@ -25,19 +25,7 @@
   .default-btn--large-round-image .default-btn__image {
     border-radius: 50%;
     max-width: 151px;
-    -webkit-filter: grayscale(100%) contrast(100%) brightness(1.2);
-  }
-  .horizontal-list__item:nth-child(1) .default-btn__image {
     -webkit-filter: grayscale(100%);
-  }
-  .horizontal-list__item:nth-child(2) .default-btn__image {
-    -webkit-filter: grayscale(100%) contrast(100%) brightness(1.2);
-  }
-  .horizontal-list__item:nth-child(3) .default-btn__image {
-    -webkit-filter: grayscale(100%) contrast(150%) brightness(0.9);
-  }
-  .horizontal-list__item:nth-child(4) .default-btn__image {
-    -webkit-filter: grayscale(100%) contrast(240%) brightness(0.9);
   }
   .main-header {
     margin: 4px 0 12px;

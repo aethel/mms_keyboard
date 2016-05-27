@@ -31,7 +31,7 @@
   }
 
 
-//  toggleModal(modalMessages.choiceSwitch);
+ // toggleModal(modalMessages.additionalCharge);
 //  toggleModal();
 })();
 
