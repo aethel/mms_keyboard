@@ -43,12 +43,12 @@
 }
 
 .photo-preview__image {
-  width: 464px;
-  height: 464px;
   border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   z-index: 2;
   transform: translate(-50%, -50%);
+  min-height: 464px;
+  -webkit-clip-path: ellipse(232px 232px at 50% 50%);
 }
