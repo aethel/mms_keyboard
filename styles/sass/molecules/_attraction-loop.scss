@@ -7,13 +7,15 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 100%;
+    width: 1080px;
+    z-index: 8;
     background: $dark;
   }
 }
 
 .attract-loop__content {
-  position: relative;
+  position: absolute;
   z-index: 9;
-  width: 100%;
+  width: 1080px;
+  height: 100%;
 }

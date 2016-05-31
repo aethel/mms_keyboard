@@ -14,9 +14,16 @@
 
 	.horizontal-list__item {
 		margin: 0 10px 30px;
+    
+    .default-btn__image-label {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top:154px;
+    }
 	}
 
 	.previews-list {
 		margin: 0 0 27px;
-	}
+	}    
 }

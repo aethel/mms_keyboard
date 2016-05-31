@@ -254,8 +254,22 @@
   @extend .default-btn--large-round;
   width: 327px;
   height: 327px;
+  position: relative;
   &:after {
     display: none;
+  }
+}
+
+.default-btn__image-label {
+  color: $default-blue;
+  font-size: 18px;
+}
+
+.default-btn--large-caption:focus,
+.default-btn--large-caption:active {
+  .default-btn__image-label {
+    color: $active-button;
+    font-size: 18px;
   }
 }
 
