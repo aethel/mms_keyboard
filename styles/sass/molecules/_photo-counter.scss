@@ -16,6 +16,21 @@
   line-height: 3;
 }
 
+.photo-counter__counter::before {
+  content: '';
+  display: block;
+  width: 150px;
+  height: 150px;
+  border: 15px solid $default-icon;
+  border-radius: 50%;
+  position: absolute;
+  left: 51%;
+  top: 49%;
+  opacity: 1;
+  transform: translate(-55%,-50%);
+  animation: photoBorder 3s steps(1) 1 normal forwards;
+}
+
 
 @keyframes contentChange {
   0% {
@@ -35,4 +50,13 @@
   100% {
      background: url(../../../images/flash-burst.png) no-repeat center center transparent;
   }
+}
+
+@keyframes photoBorder {
+  0% {
+    opacity: 1;
+  }     
+  82% {
+    opacity: 0;
+  } 
 }

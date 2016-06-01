@@ -39,7 +39,6 @@
     }, false);
   }
 
-
 })();
 
 var InitSlider = function (target, width) {

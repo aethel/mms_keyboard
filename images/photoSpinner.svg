@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 170 170" xmlns="http://www.w3.org/2000/svg">
+
+  <ellipse  class="radial-progress-cover"   style="fill: transparent; stroke: rgb(255, 0, 0); stroke-width: 11;" cx="85" cy="85" rx="75" ry="75"/>
+
+  
+  <script>
+    (function(){
+    window.onload = function(){
+      var radius = 5,
+          circumference = 2 * Math.PI * radius;
+    
+    var elements = document.querySelectorAll('ellipse');
+    Array.prototype.forEach.call(elements, function(el){
+    el.setAttribute('stroke-dasharray', circumference + 'em');            
+    })
+    
+    var currentCount = 1, 
+        maxCount = 108;
+    
+    var intervalId = setInterval(function(){
+        if(currentCount > maxCount) {
+          clearInterval(intervalId);
+          return;
+        }
+          
+    var offset = -(circumference / maxCount) * currentCount + 'em';
+    
+    document.querySelector('.radial-progress-cover').setAttribute('stroke-dashoffset', offset);
+    
+    currentCount++;
+    
+    }, 25);
+    };
+    })();
+  </script>
+</svg>
