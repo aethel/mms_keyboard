@@ -42,7 +42,6 @@
 })();
 
 var InitSlider = function (target, width) {
-  console.log(target);
   var viewportWrapper = target
     , viewportSlider = viewportWrapper.querySelector('.js-viewport-slider')
     , nextBtn = viewportWrapper.querySelector('.js-next')
@@ -72,7 +71,7 @@ var InitSlider = function (target, width) {
     for (var i = 0; i < viewportSliderBtns.length; i++) {
       viewportSliderBtns[i].classList.remove('is-active');
     }
-    console.log(e.target, e.currentTarget);
+    
     e.target.classList.add('is-active');
   }, false);
 
