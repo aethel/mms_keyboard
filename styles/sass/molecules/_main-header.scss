@@ -43,6 +43,14 @@
   }
 }
 
+.language-ch {
+  .main-header {
+    .default-btn--half-right::after {
+      background-position: 94px -13px;
+    }
+  }
+}
+
 .main-header__heading {
   @include column(6,8);
   text-align: center;
