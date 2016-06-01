@@ -14,23 +14,18 @@
   background: none no-repeat center center transparent;  
   height: 265px;
   line-height: 3;
+  position: absolute;
+  top: -53px;
+  left: 50%;
+  width: 265px;
+  transform: translateX(-50%);
 }
 
-.photo-counter__counter::before {
-  content: '';
-  display: block;
+.photo-counter__spinner {
   width: 150px;
   height: 150px;
-  border: 15px solid $default-icon;
-  border-radius: 50%;
-  position: absolute;
-  left: 51%;
-  top: 49%;
-  opacity: 1;
-  transform: translate(-55%,-50%);
-  animation: photoBorder 3s steps(1) 1 normal forwards;
+  transform: rotate(-90deg);
 }
-
 
 @keyframes contentChange {
   0% {
@@ -52,11 +47,3 @@
   }
 }
 
-@keyframes photoBorder {
-  0% {
-    opacity: 1;
-  }     
-  82% {
-    opacity: 0;
-  } 
-}

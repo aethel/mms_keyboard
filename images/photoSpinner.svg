@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <svg viewBox="0 0 170 170" xmlns="http://www.w3.org/2000/svg">
 
-  <ellipse  class="radial-progress-cover"   style="fill: transparent; stroke: rgb(255, 0, 0); stroke-width: 11;" cx="85" cy="85" rx="75" ry="75"/>
+  <ellipse  class="radial-progress-cover"   style="fill: transparent; stroke: #fed430; stroke-width: 11;" cx="85" cy="85" rx="75" ry="75"/>
 
   
   <script>

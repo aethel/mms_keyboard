@@ -10,28 +10,28 @@
 </head>
 
 <body>
- <!-- attract loop-->
+  <!-- attract loop-->
   <section class="attract-loop js-attract-loop">
-     <video class="attract-loop__content" src="videos/attract_loop.mp4" autoplay loop></video>
-   </section>
-  
+    <video class="attract-loop__content" src="videos/attract_loop.mp4" autoplay loop></video>
+  </section>
+
   <div class="wrapper js-wrapper">
-   <div class="modal js-modal is-centred">
-     <p class="modal__content js-modal-message"></p>
-     <ul class="horizontal-list js-modal-buttons">
-       <li class="horizontal-list__item">
-         <button class="default-btn--double">
-          <span class="default-btn--double__second-line js-modal-lbutton">select your cup</span>
-        </button>
-       </li>
-       <li class="horizontal-list__item">
-         <button class="default-btn--double">
-          <span class="default-btn--double__second-line js-modal-rbutton">select your cup</span>
-        </button>
-       </li>
-     </ul>
-   </div>
-   
+    <div class="modal js-modal is-centred">
+      <p class="modal__content js-modal-message"></p>
+      <ul class="horizontal-list js-modal-buttons">
+        <li class="horizontal-list__item">
+          <button class="default-btn--double">
+            <span class="default-btn--double__second-line js-modal-lbutton">select your cup</span>
+          </button>
+        </li>
+        <li class="horizontal-list__item">
+          <button class="default-btn--double">
+            <span class="default-btn--double__second-line js-modal-rbutton">select your cup</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+
     <!-- language selection  -->
     <section class="language-select js-language-select is-hidden">
       <figure class="hero-image">
@@ -94,7 +94,7 @@
             </div>
           </button>
           <p class="h2">Select a cup size</p>
-        </li>      
+        </li>
         <li class="horizontal-list__item">
           <button class="default-btn--large-round-image">
             <figure>
@@ -107,7 +107,7 @@
           </button>
           <p class="h2">Pick your colours</p>
         </li>
-          <li class="horizontal-list__item">
+        <li class="horizontal-list__item">
           <button class="default-btn--large-round-image">
             <figure>
               <img class="default-btn__image" src="../images/step4-US.png" alt="">
@@ -439,16 +439,18 @@
         </div>
       </div>
       <div class="photo-counter js-photo-counter is-centred">
-        <div class="photo-counter__counter js-counter"></div>
+        <div class="photo-counter__counter js-counter">
+          <object class="photo-counter__spinner type="image/svg+xml" data="../images/photoSpinner.svg"></object>
+        </div>
       </div>
       <div class="photo-processing js-photo-processing is-centred">
-       <div class="preview-icon--large">
-        
-        <figure class="is-centred">
-          <img src="/images/m-preview-large.png" alt="">
-        </figure>
-       
-      </div>
+        <div class="preview-icon--large">
+
+          <figure class="is-centred">
+            <img src="/images/m-preview-large.png" alt="">
+          </figure>
+
+        </div>
       </div>
       <header class="main-header">
         <button class="default-btn--half-right"></button>
@@ -504,31 +506,31 @@
       <ul class="horizontal-list is-centred">
         <li class="horizontal-list__item">
           <button class="default-btn--large-round-image">
-					<figure>
-						<img class="default-btn__image" src="../images/photo-placeholder.png" alt="" />
-					</figure>
-				</button> 
+            <figure>
+              <img class="default-btn__image" src="../images/photo-placeholder.png" alt="" />
+            </figure>
+          </button>
         </li>
         <li class="horizontal-list__item">
           <button class="default-btn--large-round-image">
-					<figure>
-						<img class="default-btn__image" src="../images/photo-placeholder.png" alt="" />
-					</figure>
-				</button> 
+            <figure>
+              <img class="default-btn__image" src="../images/photo-placeholder.png" alt="" />
+            </figure>
+          </button>
         </li>
         <li class="horizontal-list__item">
           <button class="default-btn--large-round-image">
-					<figure>
-						<img class="default-btn__image" src="../images/photo-placeholder.png" alt="" />
-					</figure>
-				</button> 
+            <figure>
+              <img class="default-btn__image" src="../images/photo-placeholder.png" alt="" />
+            </figure>
+          </button>
         </li>
         <li class="horizontal-list__item">
           <button class="default-btn--large-round-image">
-					<figure>
-						<img class="default-btn__image" src="../images/photo-placeholder.png" alt="" />
-					</figure>
-				</button> 
+            <figure>
+              <img class="default-btn__image" src="../images/photo-placeholder.png" alt="" />
+            </figure>
+          </button>
         </li>
       </ul>
       <header class="main-header">
@@ -1082,13 +1084,13 @@
   <script type="text/javascript">
     VirtualKeyboard.toggle('text', 'keyboard');
   </script>
-  <script type="text/javascript" src="/scripts/section-switching.js"></script>  
+  <script type="text/javascript" src="/scripts/section-switching.js"></script>
   <script type="text/javascript" src="/scripts/scripts.js"></script>
   <script type="text/javascript" src="/scripts/take-photo.js"></script>
   <script type="text/javascript" src="/scripts/theme-customisation.js"></script>
   <script type="text/javascript" src="/scripts/team-customisation.js"></script>
   <script type="text/javascript" src="/scripts/alerts.js"></script>
-  
+
 
 </body>
 
