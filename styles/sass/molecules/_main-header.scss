@@ -1,9 +1,11 @@
 .main-header {
   @include row();
   margin: 4px 0 68px;
+  position: relative;
+  height: 147px;
 
   .default-btn--half-left,.default-btn--half-right {
-    position: relative;
+    position: absolute;
 		vertical-align: top;
   }
 
@@ -55,6 +57,9 @@
   @include column(6,8);
   text-align: center;
   margin: -6px 0 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   &::after {
     content: '';
     display: block;
