@@ -47,10 +47,8 @@ var InitSlider = function (target, width) {
     , nextBtn = viewportWrapper.querySelector('.js-next')
     , prevBtn = viewportWrapper.querySelector('.js-prev')
     , viewportSliderBtns = viewportWrapper.querySelectorAll('.js-slider-btn')
-    , viewPortWidth = width
-    , sliderSteps = Math.ceil(viewportSlider.offsetWidth / viewPortWidth);
+    , viewPortWidth = width;
 
-  console.log(sliderSteps);
 
   nextBtn.addEventListener('click', function () {
     this.style.pointerEvents = 'none';
@@ -73,7 +71,7 @@ var InitSlider = function (target, width) {
   }
 
   function slideRight() {
-    if (-viewportSlider.offsetLeft > viewportSlider.offsetWidth - viewPortWidth) {
+    if (-viewportSlider.offsetLeft >= viewportSlider.offsetWidth - viewPortWidth) {
       viewportSlider.style.pointerEvents = 'all';
       return;
     } else {
@@ -94,16 +92,16 @@ var InitSlider = function (target, width) {
     this.style.pointerEvents = 'all';
     prevBtn.style.pointerEvents = 'all';
     nextBtn.style.pointerEvents = 'all';
-    viewportSlider.offsetLeft == 0 ? prevBtn.classList.add('is-hidden') : prevBtn.classList.remove('is-hidden'); - viewportSlider.offsetLeft > viewportSlider.offsetWidth - viewPortWidth ? nextBtn.classList.add('is-hidden') : nextBtn.classList.remove('is-hidden');
+    viewportSlider.offsetLeft == 0 ? prevBtn.classList.add('is-hidden') : prevBtn.classList.remove('is-hidden'); - viewportSlider.offsetLeft >= viewportSlider.offsetWidth - viewPortWidth ? nextBtn.classList.add('is-hidden') : nextBtn.classList.remove('is-hidden');
   }, false);
 
-  
+
   var touchPositions = {
-    start: null,
-    end: null,
-    dist: null  
+    start: null
+    , end: null
+    , dist: null
   }
-  
+
   viewportSlider.addEventListener('touchstart', function (e) {
     touchPositions.start = e.changedTouches[0].pageX;
   }, false);
@@ -113,7 +111,6 @@ var InitSlider = function (target, width) {
   viewportSlider.addEventListener('touchend', function (e) {
     this.style.pointerEvents = 'none';
     touchPositions.end = e.changedTouches[0].pageX;
-    console.log(touchPositions);    
     touchHandler();
   }, false);
 
@@ -127,9 +124,7 @@ var InitSlider = function (target, width) {
         slideLeft();
       }
     }
-//    start, end, dist = null;
   }
-
 
 
 };
