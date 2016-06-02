@@ -14,18 +14,20 @@ var SectionSwitch = function () {
     , cupSize: document.querySelector('.js-cup-size')
     , orderSummary: document.querySelector('.js-order-summary')
     , orderCompleted: document.querySelector('.js-order-completed')
+    , currentSection: null
   }
-  var currentSection = sections.attractLoop;
+  sections.currentSection = sections.attractLoop;
 
   function toggle(target) {
-    currentSection.classList.add('is-hidden');
+    sections.currentSection.classList.add('is-hidden');
     target.classList.remove('is-hidden');
-    currentSection = target;
+    sections.currentSection = target;
   };
 
   return {
     switch: toggle
     , sections: sections
+    
   }
 }();
 
@@ -121,8 +123,9 @@ var restartBtn = document.querySelectorAll('.main-header .default-btn--half-left
 
 for (var i = 0; i < restartBtnArray.length; i++) {
   restartBtnArray[i].addEventListener('click', function (e) {
-    SectionSwitch.sections.introduction.classList.remove('is-hidden');
     this.parentNode.parentNode.classList.add('is-hidden');
-    currentSection = introduction;
+    SectionSwitch.sections.introduction.classList.remove('is-hidden');
+    
+    SectionSwitch.sections.currentSection = SectionSwitch.sections.introduction;
   }, false);
 }
