@@ -124,8 +124,12 @@ var restartBtn = document.querySelectorAll('.main-header .default-btn--half-left
 for (var i = 0; i < restartBtnArray.length; i++) {
   restartBtnArray[i].addEventListener('click', function (e) {
     this.parentNode.parentNode.classList.add('is-hidden');
-    SectionSwitch.sections.introduction.classList.remove('is-hidden');
-    
+    SectionSwitch.sections.introduction.classList.remove('is-hidden');    
     SectionSwitch.sections.currentSection = SectionSwitch.sections.introduction;
+    
+    document.getElementById('VirtualKeyboardIME').style.display = 'none';
+
+    
+    
   }, false);
 }

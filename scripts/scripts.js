@@ -112,7 +112,7 @@ var InitSlider = function (target, width) {
     touchHandler();
   }, false);
 
-
+ toggleModal(modalMessages.additionalCharge);
 
   var touchHandler = function () {
     if (touchPositions.start != null && touchPositions.end != null && touchPositions.dist >= 200) {
@@ -124,11 +124,7 @@ var InitSlider = function (target, width) {
     }
     touchPositions.dist = null;
   };
-
-
 };
-
-
 
 
 var classToggler = function (event, targetClass, newClass) {
