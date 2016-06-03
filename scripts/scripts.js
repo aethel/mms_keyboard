@@ -89,7 +89,6 @@ var InitSlider = function (target, width) {
 
 
   viewportSlider.addEventListener('transitionend', function () {
-    this.style.pointerEvents = 'all';
     prevBtn.style.pointerEvents = 'all';
     nextBtn.style.pointerEvents = 'all';
     viewportSlider.offsetLeft == 0 ? prevBtn.classList.add('is-hidden') : prevBtn.classList.remove('is-hidden'); - viewportSlider.offsetLeft >= viewportSlider.offsetWidth - viewPortWidth ? nextBtn.classList.add('is-hidden') : nextBtn.classList.remove('is-hidden');
@@ -109,7 +108,6 @@ var InitSlider = function (target, width) {
     touchPositions.dist = Math.abs(e.changedTouches[0].pageX - touchPositions.start);
   }, false);
   viewportSlider.addEventListener('touchend', function (e) {
-    this.style.pointerEvents = 'none';
     touchPositions.end = e.changedTouches[0].pageX;
     touchHandler();
   }, false);
@@ -124,7 +122,8 @@ var InitSlider = function (target, width) {
         slideLeft();
       }
     }
-  }
+    touchPositions.dist = null;
+  };
 
 
 };
