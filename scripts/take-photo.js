@@ -11,6 +11,7 @@
 
 
   photoBtn.addEventListener('click', function () {
+    SoundPlayer.play(SoundPlayer.sounds.cameraClick);
     photoContainer.classList.add('is-taking-photo');
     counterContainer.classList.add('is-visible');
   }, false);

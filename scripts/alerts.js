@@ -59,11 +59,11 @@ var Modal = function () {
   
   return {
     toggle: toggleModal,
-    message: modalMessages
+    messages: modalMessages
   }
   
 }();
 
 //usage example
-//Modal.toggle(Modal.message.additionalCharge); to call
-//  toggleModal(); to reset
+//Modal.toggle(Modal.messages.additionalCharge); 
+//Modal.toggle(); to reset

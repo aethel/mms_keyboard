@@ -32,7 +32,9 @@ var SectionSwitch = function () {
 }();
 
 SectionSwitch.sections.attractLoop.addEventListener('click', function () {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.languageSelect);
+  
 }, false);
 
 
@@ -41,6 +43,7 @@ var languageSelection = SectionSwitch.sections.languageSelect.querySelector('.js
 
 languageSelection.addEventListener('click', function (e) {
   if (e.target != e.currentTarget && e.target.nodeName == 'BUTTON') {
+    SoundPlayer.play(SoundPlayer.sounds.defaultButton);
     SectionSwitch.switch(SectionSwitch.sections.howItWorks);
   }
 }, false);
@@ -48,12 +51,14 @@ languageSelection.addEventListener('click', function (e) {
 //switch from how it works page  
 var nextSectionBtnHow = SectionSwitch.sections.howItWorks.querySelector('.js-next-section');
 nextSectionBtnHow.addEventListener('click', function (e) {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.introduction);
 }, false);
 
 //switch from introduction page  
 var nextSectionBtnIntro = SectionSwitch.sections.introduction.querySelector('.js-next-section');
 nextSectionBtnIntro.addEventListener('click', function (e) {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.cupSize);
 }, false);
 
@@ -64,55 +69,66 @@ var gotoPhoto = SectionSwitch.sections.introduction.querySelector('.js-goto-phot
 
 
 gotoPhoto.addEventListener('click', function () {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.takePhoto)
 }, false);
 gotoTheme.addEventListener('click', function () {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.pickTheme)
 }, false);
 gotoMessage.addEventListener('click', function () {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.pickMessage)
 }, false);
 gotoTeam.addEventListener('click', function () {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.pickTeam)
 }, false);
 
 //switch from confirm photo page  
 var confirmPhotoBtn = SectionSwitch.sections.confirmPhoto.querySelector('.js-next-section');
 confirmPhotoBtn.addEventListener('click', function (e) {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.introduction);
 }, false);
 //
 //switch from take photo page  
 var takePhotoBtn = SectionSwitch.sections.takePhoto.querySelector('.js-photo-processing');
 takePhotoBtn.addEventListener('click', function (e) {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.confirmPhoto);
 }, false);
 
 //switch from cup size page  
 var personaliseBtn = SectionSwitch.sections.cupSize.querySelector('.js-previous-section');
 personaliseBtn.addEventListener('click', function (e) {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.introduction);
 }, false);
 
 var orderReviewBtn = SectionSwitch.sections.cupSize.querySelector('.js-next-section');
 orderReviewBtn.addEventListener('click', function (e) {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.orderSummary);
 }, false);
 
 //switch from order review page  
 var cupSizeBtn = SectionSwitch.sections.orderSummary.querySelector('.js-previous-section');
 cupSizeBtn.addEventListener('click', function (e) {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.cupSize);
 }, false);
 
 var finaliseBtn = SectionSwitch.sections.orderSummary.querySelector('.js-next-section');
 finaliseBtn.addEventListener('click', function (e) {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.orderCompleted);
 }, false);
 
 //switch from order completed page  
 var newOrderBtn = SectionSwitch.sections.orderCompleted.querySelector('.js-next-section');
 newOrderBtn.addEventListener('click', function (e) {
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
   SectionSwitch.switch(SectionSwitch.sections.introduction);
 }, false);
 
@@ -124,9 +140,13 @@ var restartBtn = document.querySelectorAll('.main-header .default-btn--half-left
 for (var i = 0; i < restartBtnArray.length; i++) {
   restartBtnArray[i].addEventListener('click', function (e) {
     this.parentNode.parentNode.classList.add('is-hidden');
+    SoundPlayer.play(SoundPlayer.sounds.defaultButton);
     SectionSwitch.sections.introduction.classList.remove('is-hidden');    
     SectionSwitch.sections.currentSection = SectionSwitch.sections.introduction;
     
-    document.getElementById('VirtualKeyboardIME').style.display = 'none';
+   var keyboard = document.getElementById('VirtualKeyboardIME'); 
+    if(keyboard != null) { 
+      keyboard.style.display = 'none' 
+    } 
   }, false);
 }

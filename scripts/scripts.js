@@ -19,7 +19,6 @@
     }
   }, false);
 
-Modal.toggle();
 
   // personalisation controls toggle
   var InitControls = function (target) {
@@ -29,11 +28,13 @@ Modal.toggle();
       , personalOptionsDownBtn = personalisationWrapper.querySelector('.options-btn-wrapper .js-options-down');
 
     personalOptionsUpBtn.addEventListener('click', function () {
+      SoundPlayer.play(SoundPlayer.sounds.moreChoices);
       personalOptions.classList.toggle('is-up');
       personalOptionsDownBtn.parentNode.classList.toggle('is-down');
     }, false);
 
     personalOptionsDownBtn.addEventListener('click', function () {
+      SoundPlayer.play(SoundPlayer.sounds.moreChoices);
       this.parentNode.classList.toggle('is-down');
       personalOptions.classList.toggle('is-up');
     }, false);
