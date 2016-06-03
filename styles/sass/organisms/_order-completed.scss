@@ -3,6 +3,9 @@
   .hero-image {
     margin: 221px 0 0;
   }
+  .hero-image__image {
+    width: 1000px;
+  }
   .default-btn--double {
     padding: 18px 0;
   }
@@ -16,7 +19,7 @@
     font-size: 20px;
   }
   .receipt-pointer {
-    margin: 0 0 228px;
+    margin: 0 0 188px;
     .fs-large {
       margin: 0 0 41px;
     }
@@ -31,6 +34,6 @@
     margin: 19px auto 0 !important;
   }
   .main-header {
-    margin: 39px 0 68px;
+    margin: 39px 0 8px;
   }
 }
