@@ -1,6 +1,6 @@
 "use strict";
 
-(function () {
+var Modal = function () {
 
   var modalMessages = {
     userPresent: {
@@ -30,34 +30,40 @@
     }
   }
 
+  function toggleModal(context) {
+    var messageContainer = document.querySelector('.js-modal-message ')
+      , buttonsContainer = document.querySelector('.js-modal-buttons')
+      , buttonLeft = document.querySelector('.js-modal-lbutton')
+      , buttonRight = document.querySelector('.js-modal-rbutton')
+      , modal = document.querySelector('.js-modal')
+      , wrapper = document.querySelector('.js-wrapper');
 
- // toggleModal(modalMessages.additionalCharge);
-//  toggleModal();
-})();
+    var modalVisible = modal.classList.contains('is-visible') ? true : false;
 
-function toggleModal(context) {
-  var messageContainer = document.querySelector('.js-modal-message ')
-    , buttonsContainer = document.querySelector('.js-modal-buttons')
-    , buttonLeft = document.querySelector('.js-modal-lbutton')
-    , buttonRight = document.querySelector('.js-modal-rbutton')
-    , modal = document.querySelector('.js-modal'),
-      wrapper =  document.querySelector('.js-wrapper');
-
-  var modalVisible = modal.classList.contains('is-visible') ? true : false;
-
-  if (!modalVisible) {
-    messageContainer.textContent = context.message;
-    buttonLeft.textContent = context.buttonLeft;
-    if(context.buttonRight) {
-      buttonRight.textContent = context.buttonRight;
+    if (!modalVisible) {
+      messageContainer.textContent = context.message;
+      buttonLeft.textContent = context.buttonLeft;
+      if (context.buttonRight) {
+        buttonRight.textContent = context.buttonRight;
+      } else {
+        buttonRight.parentElement.classList.add('is-hidden');
+      }
+      modal.classList.add('is-visible');
+      wrapper.classList.add('has-overlay');
     } else {
-      buttonRight.parentElement.classList.add('is-hidden');
+      modal.classList.remove('is-visible');
+      wrapper.classList.remove('has-overlay');
     }
-    modal.classList.add('is-visible');
-    wrapper.classList.add('has-overlay');
-  } else {
-    modal.classList.remove('is-visible');
-    wrapper.classList.remove('has-overlay');
-  }
 
-}
+  }
+  
+  return {
+    toggle: toggleModal,
+    message: modalMessages
+  }
+  
+}();
+
+//usage example
+//Modal.toggle(Modal.message.additionalCharge); to call
+//  toggleModal(); to reset

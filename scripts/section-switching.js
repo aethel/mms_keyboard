@@ -128,8 +128,5 @@ for (var i = 0; i < restartBtnArray.length; i++) {
     SectionSwitch.sections.currentSection = SectionSwitch.sections.introduction;
     
     document.getElementById('VirtualKeyboardIME').style.display = 'none';
-
-    
-    
   }, false);
 }

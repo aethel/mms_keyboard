@@ -19,7 +19,7 @@
     }
   }, false);
 
-
+Modal.toggle();
 
   // personalisation controls toggle
   var InitControls = function (target) {
@@ -112,7 +112,7 @@ var InitSlider = function (target, width) {
     touchHandler();
   }, false);
 
- toggleModal(modalMessages.additionalCharge);
+ 
 
   var touchHandler = function () {
     if (touchPositions.start != null && touchPositions.end != null && touchPositions.dist >= 200) {
