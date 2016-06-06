@@ -11,9 +11,18 @@
 
 
   photoBtn.addEventListener('click', function () {
-    SoundPlayer.play(SoundPlayer.sounds.cameraClick);
-    photoContainer.classList.add('is-taking-photo');
-    counterContainer.classList.add('is-visible');
+    SoundPlayer.play(SoundPlayer.sounds.cameraClick).then(
+      function () {
+        photoContainer.classList.add('is-taking-photo');
+        counterContainer.classList.add('is-visible');
+
+        var timeout = setTimeout(function () {
+          SoundPlayer.play(SoundPlayer.sounds.cameraCountdown);
+        }, 100);
+      }
+      , function (error) {
+        console.log(error);
+      });
   }, false);
 
   counter.addEventListener('animationend', function () {

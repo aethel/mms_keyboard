@@ -32,7 +32,13 @@ var SectionSwitch = function () {
 }();
 
 SectionSwitch.sections.attractLoop.addEventListener('click', function () {
-  SoundPlayer.play(SoundPlayer.sounds.defaultButton);
+  SoundPlayer.play(SoundPlayer.sounds.defaultButton).then(
+  function(){
+//    SoundPlayer.play(SoundPlayer.sounds.screenTransition);
+  },
+  function(error){
+    console.log(error);
+  });
   SectionSwitch.switch(SectionSwitch.sections.languageSelect);
   
 }, false);

@@ -8,7 +8,7 @@
 .photo-counter__counter::after {
   content: '';
   display: block;
-  animation: contentChange 3s linear 1 normal forwards;
+  animation: contentChange 4s  linear 1 normal forwards;
   font-size: 84px;  
   color: $light;
   background: none no-repeat center center transparent;  
@@ -38,11 +38,14 @@
     content: '1';
     background: none no-repeat center center transparent;  
   }  
-  99% {
+  90% {
     border: none;
     content: 'smile!';   
+    background: url(../../../images/flash-burst.png) no-repeat center center transparent;
   }  
   100% {
+    border: none;
+    content: 'smile!';   
      background: url(../../../images/flash-burst.png) no-repeat center center transparent;
   }
 }

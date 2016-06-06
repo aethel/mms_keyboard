@@ -28,8 +28,15 @@ var SoundPlayer = function(){
   }
   
   var play = function(sound){
-    audioElem.setAttribute('src',sound.src);
-    audioElem.play();
+    return new Promise(function(resolve, reject){
+      var audio = new Audio();
+      audio.preload = "auto";
+      audio.autoplay = true;
+      audio.onerror = reject;
+      audio.onended = resolve;
+      audio.src = sound.src;
+    });
+   
   }
   
   return {
