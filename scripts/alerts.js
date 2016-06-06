@@ -25,12 +25,12 @@ var Modal = function () {
     }
     , choiceSwitch: {
       message: 'You will lose your photo if you switch to other choices now. Are you sure?'
-      , buttonLeft: 'No'
-      , buttonRight: 'Yes'
+      , buttonRight: 'No'
+      , buttonLeft: 'Yes'
     }
   }
 
-  function toggleModal(context) {
+  function toggleModal(context, callback) {
     var messageContainer = document.querySelector('.js-modal-message ')
       , buttonsContainer = document.querySelector('.js-modal-buttons')
       , buttonLeft = document.querySelector('.js-modal-lbutton')
@@ -43,8 +43,9 @@ var Modal = function () {
     if (!modalVisible) {
       messageContainer.textContent = context.message;
       buttonLeft.textContent = context.buttonLeft;
-      if (context.buttonRight) {
+      if (context.buttonRight && context.buttonRight != '') {
         buttonRight.textContent = context.buttonRight;
+        buttonRight.parentElement.classList.remove('is-hidden');
       } else {
         buttonRight.parentElement.classList.add('is-hidden');
       }
@@ -55,15 +56,44 @@ var Modal = function () {
       wrapper.classList.remove('has-overlay');
     }
 
+
+
+    if (callback) {
+      buttonsContainer.addEventListener('click', function (e) {
+        SoundPlayer.play(SoundPlayer.sounds.defaultButton);
+          if(e.target.classList.contains('js-modal-lbutton')){
+            callback(true);      
+          } 
+          if(e.target.classList.contains('js-modal-rbutton')){
+            callback(false);      
+          }       
+      }, false);      
+    }
   }
-  
+
   return {
-    toggle: toggleModal,
-    messages: modalMessages
+    toggle: toggleModal
+    , messages: modalMessages
   }
-  
+
 }();
 
 //usage example
-//Modal.toggle(Modal.messages.additionalCharge); 
+//Modal.toggle(Modal.messages.choiceSwitch, function (response) {
+//  if(response){
+//    console.log(response);
+//    //trigger other stuff
+//  } else {
+//    Modal.toggle();
+//  }
+//});
+//
+//Modal.toggle(Modal.messages.choiceSwitch, function (response) {
+//  if(response){
+//    console.log(response);
+//    //trigger other stuff
+//  } else {
+//    Modal.toggle();
+//  }
+//});
 //Modal.toggle(); to reset

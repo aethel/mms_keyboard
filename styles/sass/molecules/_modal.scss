@@ -11,6 +11,11 @@
   .default-btn--double {
     padding: 18px 0;
   }
+  .default-btn--double__second-line {
+    display: block;
+    width: 100%;
+    pointer-events: all;
+  }
   .modal__content {
     @include column(6, 8);
     font-size: 84px;
