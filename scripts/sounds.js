@@ -1,7 +1,5 @@
 "use strict";
-
 var SoundPlayer = function(){
-  var audioElem = document.querySelector('.js-audio');
   
   var sounds = {
     defaultButton: {

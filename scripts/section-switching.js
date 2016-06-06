@@ -27,20 +27,20 @@ var SectionSwitch = function () {
   return {
     switch: toggle
     , sections: sections
-    
+
   }
 }();
 
 SectionSwitch.sections.attractLoop.addEventListener('click', function () {
   SoundPlayer.play(SoundPlayer.sounds.defaultButton).then(
-  function(){
-//    SoundPlayer.play(SoundPlayer.sounds.screenTransition);
-  },
-  function(error){
-    console.log(error);
-  });
+    function () {
+      //    SoundPlayer.play(SoundPlayer.sounds.screenTransition);
+    }
+    , function (error) {
+      console.log(error);
+    });
   SectionSwitch.switch(SectionSwitch.sections.languageSelect);
-  
+
 }, false);
 
 
@@ -147,12 +147,19 @@ for (var i = 0; i < restartBtnArray.length; i++) {
   restartBtnArray[i].addEventListener('click', function (e) {
     this.parentNode.parentNode.classList.add('is-hidden');
     SoundPlayer.play(SoundPlayer.sounds.defaultButton);
-    SectionSwitch.sections.introduction.classList.remove('is-hidden');    
+    SectionSwitch.sections.introduction.classList.remove('is-hidden');
     SectionSwitch.sections.currentSection = SectionSwitch.sections.introduction;
-    
-   var keyboard = document.getElementById('VirtualKeyboardIME'); 
-    if(keyboard != null) { 
-      keyboard.style.display = 'none' 
-    } 
+
+    var personalisationWrapper = this.parentNode.parentNode.querySelector('.js-personalisation-controls');
+    var buttonOne = personalisationWrapper.querySelector('.options-btn-wrapper');
+    var buttonTwo = personalisationWrapper.querySelector('.personalisation-controls');
+
+    buttonOne.classList.remove('is-down');
+    buttonTwo.classList.remove('is-up');
+
+    var keyboard = document.getElementById('VirtualKeyboardIME');
+    if (keyboard != null) {
+      keyboard.style.display = 'none'
+    }
   }, false);
 }

@@ -50,6 +50,7 @@ var Modal = function () {
       buttonLeft.textContent = context.buttonLeft;
       if (context.buttonRight && context.buttonRight != '') {
         buttonRight.textContent = context.buttonRight;
+         SoundPlayer.play(SoundPlayer.sounds.alertError);
         buttonRight.parentElement.classList.remove('is-hidden');
       } else {
         buttonRight.parentElement.classList.add('is-hidden');
