@@ -7,5 +7,6 @@
 		},false);	
 	},5000);
 
-
+  var keyButtons = document.querySelectorAll()
+SoundPlayer.play(SoundPlayer.sounds.defaultButton);
 }());
