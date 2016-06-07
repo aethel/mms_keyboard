@@ -32,6 +32,12 @@ var FactoryVideo = function () {
   function addImage(image) {
     var imageElem = document.querySelector('.js-factory-image');
     imageElem.setAttribute('src',image);
+    
+    var imageTimeout = setTimeout(function(){
+      imageElem.classList.remove('is-rotated-twice');
+      imageElem.classList.add('is-rotated-once');
+    },4900)
+    
   }
 
   return {
