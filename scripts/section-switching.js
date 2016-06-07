@@ -138,7 +138,6 @@ newOrderBtn.addEventListener('click', function (e) {
   SectionSwitch.switch(SectionSwitch.sections.introduction);
 }, false);
 
-
 //restart button
 var restartBtn = document.querySelectorAll('.main-header .default-btn--half-left')
   , restartBtnArray = Array.from(restartBtn);
@@ -151,11 +150,12 @@ for (var i = 0; i < restartBtnArray.length; i++) {
     SectionSwitch.sections.currentSection = SectionSwitch.sections.introduction;
 
     var personalisationWrapper = this.parentNode.parentNode.querySelector('.js-personalisation-controls');
-    var buttonOne = personalisationWrapper.querySelector('.options-btn-wrapper');
-    var buttonTwo = personalisationWrapper.querySelector('.personalisation-controls');
-
-    buttonOne.classList.remove('is-down');
-    buttonTwo.classList.remove('is-up');
+    if (personalisationWrapper) {
+      var buttonOne = personalisationWrapper.querySelector('.options-btn-wrapper');
+      var buttonTwo = personalisationWrapper.querySelector('.personalisation-controls');
+      buttonOne.classList.remove('is-down');
+      buttonTwo.classList.remove('is-up');
+    }
 
     var keyboard = document.getElementById('VirtualKeyboardIME');
     if (keyboard != null) {

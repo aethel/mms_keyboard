@@ -10,6 +10,14 @@
 </head>
 
 <body>
+  <!-- factory video-->
+  <section class="factory-video js-factory-wrapper is-hidden">
+    <figure class="factory-video__overlay">
+      <img class="factory-video__image is-rotated-twice js-factory-image" src="" />
+    </figure>
+    <video class="factory-video__content js-factory-video" autoplay></video>
+  </section>
+
   <!-- attract loop-->
   <section class="attract-loop js-attract-loop">
     <video class="attract-loop__content" src="videos/attract_loop.mp4" autoplay loop></video>
@@ -1081,10 +1089,16 @@
       </div>
     </section>
   </div>
-  
+
   <script type="text/javascript">
     VirtualKeyboard.toggle('text', 'keyboard');
   </script>
+<!--
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/CSSPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/easing/EasePack.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenLite.min.js"></script>
+-->
+  <script type="text/javascript" src="/scripts/factory-videos.js"></script>
   <script type="text/javascript" src="/scripts/section-switching.js"></script>
   <script type="text/javascript" src="/scripts/alerts.js"></script>
   <script type="text/javascript" src="/scripts/sounds.js"></script>
@@ -1094,6 +1108,7 @@
   <script type="text/javascript" src="/scripts/team-customisation.js"></script>
   <script type="text/javascript" src="/scripts/keyboard.js"></script>
   
+
 
 
 </body>
