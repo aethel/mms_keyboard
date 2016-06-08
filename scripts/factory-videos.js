@@ -27,9 +27,6 @@ var FactoryVideo = function () {
       doorContainer.classList.add('is-closed');
     }, 11090);
 
-    
-
-
     if (callback) {
       videoElem.addEventListener('ended', function () {
         videoWrapper.classList.add('is-hidden');

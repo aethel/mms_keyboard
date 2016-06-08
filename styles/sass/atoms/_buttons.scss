@@ -170,6 +170,11 @@
   > * {
     pointer-events: none;
   }
+  
+  &:active,
+  &:focus {
+    box-shadow: none;
+  }
 }
 
 .default-btn--double {
@@ -185,6 +190,11 @@
   display: block;
   > * {
     pointer-events: none;
+  }
+  
+  &:active,
+  &:focus {
+    box-shadow: none;
   }
 }
 
