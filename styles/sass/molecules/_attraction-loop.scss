@@ -3,13 +3,13 @@
   z-index: 9;
   height: 1920px;
   &:after {
-    content:'';
+    content: '';
     position: absolute;
     top: 0;
     bottom: 0;
     width: 1080px;
     z-index: 8;
-    background: $dark;
+    background: linear-gradient(to bottom, $attract-light, $attract-dark);
   }
 }
 
