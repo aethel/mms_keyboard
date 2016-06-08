@@ -32,8 +32,7 @@ var FactoryVideo = function () {
 
   function addImage(image) {
     var imageElem = document.querySelector('.js-factory-image');
-    imageElem.setAttribute('src',image);
-//    
+    imageElem.setAttribute('src',image);    
   }
 
   return {
