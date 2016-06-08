@@ -35,6 +35,12 @@ var FactoryVideo = function () {
     imageElem.setAttribute('src',image);    
   }
 
+  var doorTimeout = setTimeout(function (){
+    var doorContainer = document.querySelector('.js-doors');
+    doorContainer.classList.add('is-closed');
+  }, 13010);
+  
+  
   return {
     sources: videos
     , addSource: assignSrc
