@@ -23,12 +23,10 @@ var FactoryVideo = function () {
 
     var doorTimeout = setTimeout(function () {
       doorContainer.classList.add('is-closed');
-    }, 11100);
+    }, 11095);
 
     videoElem.setAttribute('src', video.src);
     addImage(image);
-
-
 
 
     if (callback) {
@@ -38,18 +36,12 @@ var FactoryVideo = function () {
         callback(true);
       }, false);
     }
-
-
-
   }
 
   function addImage(image) {
     var imageElem = document.querySelector('.js-factory-image');
     imageElem.setAttribute('src', image);
   }
-
-
-
 
   return {
     sources: videos
