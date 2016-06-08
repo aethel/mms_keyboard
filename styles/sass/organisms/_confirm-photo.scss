@@ -1,26 +1,68 @@
 .confirm-photo {
+  .photo-wrapper {
+    @include row();
+    margin: 0 0 -30px;
+  }
+  .camera-trigger,
+  .retake-confirm-btn {
+    @include column(2, 8);
+  }
+  .camera-trigger {    
+    margin: 97px 0 0;
+  }
+  .retake-confirm-btn {
+    margin: 185px 0 0;
+  }
+  .photo-preview-wrapper {
+    @include column(4, 8);
+  }
+  .icon-camera {
+    font-size: 65px;
+  }
+  .photo-label {
+    font-size: 36px;
+    color: $light;
+    margin: 0 0 55px;
+  }
   .preview-icon--large {
     width: 510px;
     height: 510px;
     margin: 0 auto 147px;
+    figure {
+      height: 100%;
+      position: relative;
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 9;
+    }
   }
   .preview-icon--large::after {
     width: 366px;
     height: 366px;
   }
-  .photo-wrapper {
-    position: absolute;
-    top: 50%;
-    text-align: center;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
- > .horizontal-list {
+  > .horizontal-list {
     margin: 0 0 145px;
   }
   .horizontal-list__item {
     margin: 0 15px;
+  }
+  .retake-confirm-btn {
+    .default-btn--round-double {
+      width: 150px;
+      height: 150px;
+    }
+    .default-btn--round-first-line {
+      font-size: 36px;
+    }
+    .icon-ok-primary {
+      color: $default-icon;
+      font-size: 56px;
+      MArgin: 0 0 17px;
+    }
   }
   .default-btn--large-round-image .default-btn__image {
     border-radius: 50%;
@@ -32,5 +74,11 @@
   }
   .hero-image {
     margin: 70px 0 57px;
+  }
+  .camera-trigger .default-btn--round-control {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at top, #f9e186, #bc9a0f);
+    box-shadow: inset 0 2px 2px -1px rgba(255, 255, 255, 0.75), 0 0 0px 0px #fff;
   }
 }

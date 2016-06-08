@@ -498,18 +498,26 @@
       <figure class="hero-image">
         <img src="images/green-character.png" alt="" class="hero-image__image">
       </figure>
-      <div class="preview-icon--large">
-        <button class="default-btn--round-double" disabled="true">
-          <i class="icon-close-primary"></i>
-          <span class="default-btn--round-first-line">Clear</span>
-        </button>
-        <figure class="is-centred photo-wrapper">
-          <img src="/images/m-preview-large.png" alt="">
-        </figure>
-        <button class="default-btn--round-double js-next-section" disabled="true">
-          <i class="icon-ok-primary"></i>
-          <span class="default-btn--round-first-line">Ok</span>
-        </button>
+      <div class="photo-wrapper js-photo-wrapper">
+        <div class="camera-trigger is-centred">
+          <p class="photo-label">Retake picture</p>
+          <button class="default-btn--round-control">
+            <i class="icon-camera"></i>
+          </button>
+        </div>
+        <div class="photo-preview-wrapper">
+          <div class="preview-icon--large">
+            <figure class="is-centred photo-wrapper">
+              <img src="/images/m-preview-large.png" alt="">
+            </figure>
+          </div>
+        </div>
+        <div class="retake-confirm-btn is-centred">
+          <button class="default-btn--round-double js-next-section">
+            <i class="icon-ok-primary"></i>
+            <span class="default-btn--round-first-line">Ok</span>
+          </button>
+        </div>
       </div>
       <ul class="horizontal-list is-centred">
         <li class="horizontal-list__item">
@@ -1093,7 +1101,7 @@
   <script type="text/javascript">
     VirtualKeyboard.toggle('text', 'keyboard');
   </script>
-<!--
+  <!--
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/plugins/CSSPlugin.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/easing/EasePack.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenLite.min.js"></script>
@@ -1107,7 +1115,7 @@
   <script type="text/javascript" src="/scripts/theme-customisation.js"></script>
   <script type="text/javascript" src="/scripts/team-customisation.js"></script>
   <script type="text/javascript" src="/scripts/keyboard.js"></script>
-  
+
 
 
 
