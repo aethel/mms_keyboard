@@ -24,6 +24,7 @@ var FactoryVideo = function () {
     
     if (callback) {
       videoElem.addEventListener('ended', function () {
+        videoWrapper.classList.add('is-hidden');
         callback(true);
       }, false);
     }
@@ -33,11 +34,6 @@ var FactoryVideo = function () {
     var imageElem = document.querySelector('.js-factory-image');
     imageElem.setAttribute('src',image);
 //    
-//    var imageTimeout = setTimeout(function(){
-//      imageElem.classList.remove('is-rotated-twice');
-//      imageElem.classList.add('is-rotated-once');
-//    },8000)
-    
   }
 
   return {

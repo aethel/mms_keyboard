@@ -128,7 +128,30 @@ cupSizeBtn.addEventListener('click', function (e) {
 var finaliseBtn = SectionSwitch.sections.orderSummary.querySelector('.js-next-section');
 finaliseBtn.addEventListener('click', function (e) {
   SoundPlayer.play(SoundPlayer.sounds.defaultButton);
-  SectionSwitch.switch(SectionSwitch.sections.orderCompleted);
+
+  function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
+
+  var videoRandom = getRandom(1, 10),
+      videoChoice;
+  switch (true) {
+  case (videoRandom <= 3):
+    videoChoice = FactoryVideo.sources.writer;
+    break;
+  case (videoRandom >= 4 && videoRandom <= 6):
+    videoChoice = FactoryVideo.sources.laser;
+    break;
+  case (videoRandom >= 7):
+    videoChoice = FactoryVideo.sources.cooker;
+    break;
+  }
+
+  FactoryVideo.addSource(videoChoice, 'images/test-video-overlay2.png', function (response) {
+    if (response) {
+      SectionSwitch.switch(SectionSwitch.sections.orderCompleted);
+    }
+  });
 }, false);
 
 //switch from order completed page  
