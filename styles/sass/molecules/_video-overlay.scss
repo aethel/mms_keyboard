@@ -82,7 +82,8 @@
 }
 
 .is-rotated-once {
-  animation: rotateOnce 0.3s linear 9.63s 1 forwards;
+//  animation: rotateOnce 0.3s linear 9.63s 1 forwards;
+  animation: rotateOnce 0.3s linear 10.63s 1 forwards;
 }
 
 @keyframes rotateOnce {

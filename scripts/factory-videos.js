@@ -20,13 +20,14 @@ var FactoryVideo = function () {
       , doorContainer = document.querySelector('.js-doors');
 
     videoWrapper.classList.remove('is-hidden');
-
-    var doorTimeout = setTimeout(function () {
-      doorContainer.classList.add('is-closed');
-    }, 11095);
-
     videoElem.setAttribute('src', video.src);
     addImage(image);
+    
+    var doorTimeout = setTimeout(function () {
+      doorContainer.classList.add('is-closed');
+    }, 11090);
+
+    
 
 
     if (callback) {
