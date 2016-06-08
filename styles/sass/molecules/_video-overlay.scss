@@ -40,7 +40,7 @@
     top: 50%;
     transform: translateY(-50%);    
     height: 45%;         
-    transition: all 1s ease-out;
+    transition: all 1s linear;
     transform-style: preserve-3d;
   }
   

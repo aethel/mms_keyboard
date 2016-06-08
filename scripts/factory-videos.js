@@ -16,35 +16,44 @@ var FactoryVideo = function () {
 
   function assignSrc(video, image, callback) {
     var videoElem = document.querySelector('.js-factory-video')
-      , videoWrapper = document.querySelector('.js-factory-wrapper');
+      , videoWrapper = document.querySelector('.js-factory-wrapper')
+      , doorContainer = document.querySelector('.js-doors');
 
     videoWrapper.classList.remove('is-hidden');
+
+    var doorTimeout = setTimeout(function () {
+      doorContainer.classList.add('is-closed');
+    }, 11100);
+
     videoElem.setAttribute('src', video.src);
     addImage(image);
-    
+
+
+
+
     if (callback) {
       videoElem.addEventListener('ended', function () {
         videoWrapper.classList.add('is-hidden');
+        doorContainer.classList.remove('is-closed');
         callback(true);
       }, false);
     }
+
+
+
   }
 
   function addImage(image) {
     var imageElem = document.querySelector('.js-factory-image');
-    imageElem.setAttribute('src',image);    
+    imageElem.setAttribute('src', image);
   }
 
-  var doorTimeout = setTimeout(function (){
-    var doorContainer = document.querySelector('.js-doors');
-    doorContainer.classList.add('is-closed');
-  }, 13010);
-  
-  
+
+
+
   return {
     sources: videos
     , addSource: assignSrc
   }
 
 }();
-
