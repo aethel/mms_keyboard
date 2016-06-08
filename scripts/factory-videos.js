@@ -21,12 +21,19 @@ var FactoryVideo = function () {
 
     videoWrapper.classList.remove('is-hidden');
     videoElem.setAttribute('src', video.src);
-    addImage(image);
     
+    console.log();
     var doorTimeout = setTimeout(function () {
       doorContainer.classList.add('is-closed');
     }, 11090);
 
+    videoElem.addEventListener('timeupdate', function(){            
+      if(videoElem.currentTime >= 10.25) {
+        console.log('now'); 
+        addImage(image);
+      }      
+    },false); 
+    
     if (callback) {
       videoElem.addEventListener('ended', function () {
         videoWrapper.classList.add('is-hidden');
@@ -37,6 +44,7 @@ var FactoryVideo = function () {
   }
 
   function addImage(image) {
+    console.log('img');
     var imageElem = document.querySelector('.js-factory-image');
     imageElem.setAttribute('src', image);
   }
