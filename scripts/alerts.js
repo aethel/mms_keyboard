@@ -44,8 +44,8 @@ var Modal = function () {
       , wrapper = document.querySelector('.js-wrapper');
 
     var modalVisible = modal.classList.contains('is-visible') ? true : false;
-
-    if (!modalVisible) {
+console.log(context);
+    if (!modalVisible && context != undefined) {
       messageContainer.textContent = context.message;
       buttonLeft.textContent = context.buttonLeft;
       if (context.buttonRight && context.buttonRight != '') {
