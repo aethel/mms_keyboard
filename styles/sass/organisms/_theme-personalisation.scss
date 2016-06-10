@@ -23,8 +23,7 @@
   .design-choice .btn--slider {
     top: 63px;
   }
-  .design-choice .viewport-wrapper::after,
-  .design-choice .viewport-wrapper::before {
+  .design-choice .viewport-wrapper::after, .design-choice .viewport-wrapper::before {
     content: '';
     display: block;
     width: 150px;
@@ -35,13 +34,13 @@
   }
   .btn--slider {
     z-index: 9;
-    &:before {
+    &::before {
       z-index: 9;
       position: relative;
     }
   }
   .design-choice .btn--slider.js-next {
-    &:after {
+    &::after {
       position: absolute;
       content: '';
       width: 160px;
@@ -54,7 +53,7 @@
     }
   }
   .design-choice .btn--slider.js-prev {
-    &:after {
+    &::after {
       position: absolute;
       content: '';
       width: 140px;

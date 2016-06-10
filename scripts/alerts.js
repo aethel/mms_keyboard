@@ -43,14 +43,18 @@ var Modal = function () {
       , modal = document.querySelector('.js-modal')
       , wrapper = document.querySelector('.js-wrapper');
 
+
+
+
+
     var modalVisible = modal.classList.contains('is-visible') ? true : false;
-console.log(context);
+
     if (!modalVisible && context != undefined) {
       messageContainer.textContent = context.message;
       buttonLeft.textContent = context.buttonLeft;
       if (context.buttonRight && context.buttonRight != '') {
         buttonRight.textContent = context.buttonRight;
-         SoundPlayer.play(SoundPlayer.sounds.alertError);
+        SoundPlayer.play(SoundPlayer.sounds.alertError);
         buttonRight.parentElement.classList.remove('is-hidden');
       } else {
         buttonRight.parentElement.classList.add('is-hidden');
@@ -62,26 +66,29 @@ console.log(context);
       wrapper.classList.remove('has-overlay');
     }
 
-
+    function callbackHandler(e) {
+      SoundPlayer.play(SoundPlayer.sounds.defaultButton);
+      if (e.target.classList.contains('js-modal-lbutton')) {
+        callback({
+          value: true
+          , type: context.type
+        });
+      }
+      if (e.target.classList.contains('js-modal-rbutton')) {
+        callback({
+          value: false
+          , type: context.type
+        });
+      }
+      buttonsContainer.removeEventListener('click', callbackHandler);
+    }
 
     if (callback) {
-      buttonsContainer.addEventListener('click', function (e) {
-        SoundPlayer.play(SoundPlayer.sounds.defaultButton);
-          if(e.target.classList.contains('js-modal-lbutton')){
-            callback({
-              value: true,
-              type: context.type
-            });    
-          } 
-          if(e.target.classList.contains('js-modal-rbutton')){
-            callback({
-              value: false,
-              type: context.type
-            });      
-          }       
-      }, false);      
+      buttonsContainer.addEventListener('click', callbackHandler);
+
     }
   }
+
 
   return {
     toggle: toggleModal
@@ -102,15 +109,15 @@ console.log(context);
 //  
 //});
 //
-//Modal.toggle(Modal.messages.camera, function (response) {
-////  if(response){
-//    console.log(response.value);
-//    console.log(response.type);
-//    //trigger other stuff
-////  } 
-//    Modal.toggle();
-//  
-//});
+Modal.toggle(Modal.messages.camera, function (response) {
+  if (response) {
+    console.log(response.value);
+    console.log(response.type);
+    //trigger other stuff
+  }
+  Modal.toggle();
+
+});
 
 
 //Modal.toggle(); to reset

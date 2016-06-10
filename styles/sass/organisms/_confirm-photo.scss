@@ -3,8 +3,7 @@
     @include row();
     margin: 0 0 -30px;
   }
-  .camera-trigger,
-  .retake-confirm-btn {
+  .camera-trigger, .retake-confirm-btn {
     @include column(2, 8);
   }
   .camera-trigger {    
@@ -61,7 +60,7 @@
     .icon-ok-primary {
       color: $default-icon;
       font-size: 56px;
-      MArgin: 0 0 17px;
+      margin: 0 0 17px;
     }
   }
   .default-btn--large-round-image .default-btn__image {
@@ -79,6 +78,6 @@
     width: 150px;
     height: 150px;
     background: radial-gradient(circle at top, #f9e186, #bc9a0f);
-    box-shadow: inset 0 2px 2px -1px rgba(255, 255, 255, 0.75), 0 0 0px 0px #fff;
+    box-shadow: inset 0 2px 2px -1px rgba(255, 255, 255, 0.75), 0 0 0 0 #fff;
   }
 }

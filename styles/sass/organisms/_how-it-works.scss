@@ -19,8 +19,7 @@
     &::after {
       display: none;
     }
-    &:active,
-    &:focus {
+    &:active, &:focus {
       background: $default-blue;
       box-shadow: inset 0 2px 3px -1px transparentize($light, 0.25), 0 10px 10px transparentize($dark, 0.75);
     }

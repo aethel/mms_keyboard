@@ -1,15 +1,16 @@
-h1, .h1 {
+h1,
+.h1 {
   color: $light;
   font-size: 84px;
   line-height: 0.85;
   text-transform: uppercase;
-
-	.brand-font {
-		font-size: 76px;
-	}
+  .brand-font {
+    font-size: 76px;
+  }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   color: $light;
   font-size: 36px;
   text-transform: uppercase;

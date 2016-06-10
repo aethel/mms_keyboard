@@ -4,6 +4,7 @@
 @import 'utilities/helpers';
 
 /* atoms */
+
 @import 'atoms/typography';
 @import 'atoms/buttons';
 @import 'atoms/grid';
@@ -14,6 +15,7 @@
 @import 'atoms/label';
 
 /* molecules */
+
 @import 'molecules/main-header';
 @import 'molecules/categories-list';
 @import 'molecules/previews-list';
@@ -34,6 +36,7 @@
 @import 'molecules/video-overlay';
 
 /* organisms */
+
 @import 'organisms/team-personalisation';
 @import 'organisms/message-personalisation';
 @import 'organisms/theme-personalisation';
@@ -46,15 +49,15 @@
 @import 'organisms/confirm-photo';
 
 /* OF SHAME */
+
 .wrapper {
   background: url(../../images/main-background.png) no-repeat center top transparent;
   padding-bottom: 64px;
-	height: 1920px;
-	position: relative;
-	overflow: hidden;
+  height: 1920px;
+  position: relative;
+  overflow: hidden;
   max-width: 1080px;
   margin: 0 auto;
-
   .default-btn--double {
     margin: 0 auto;
   }

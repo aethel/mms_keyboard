@@ -16,16 +16,12 @@
     transform: translateX(-50%);
     z-index: 1;
   }
-  .horizontal-list__item:nth-child(1),
-  .horizontal-list__item:nth-child(2),
-  .horizontal-list__item:nth-child(3),
-  .horizontal-list__item:nth-child(4) {
+  .horizontal-list__item:nth-child(1), .horizontal-list__item:nth-child(2), .horizontal-list__item:nth-child(3), .horizontal-list__item:nth-child(4) {
     position: absolute;
     margin: 0;
     z-index: 1;
   }
-  .horizontal-list__item:nth-child(2),
-  .horizontal-list__item:nth-child(3) {
+  .horizontal-list__item:nth-child(2),.horizontal-list__item:nth-child(3) {
     transform: translateX(-50%);
   }
   .horizontal-list__item:nth-child(1) {
@@ -35,12 +31,12 @@
   .horizontal-list__item:nth-child(2) {
     left: 50%;
     top: 20px;
-    margin: 0px;
+    margin: 0;
   }
   .horizontal-list__item:nth-child(3) {
     left: 50%;
     bottom: -46px;
-    margin: 0px;
+    margin: 0;
     .default-btn--round-control {
       font-size: 34px;
     }
