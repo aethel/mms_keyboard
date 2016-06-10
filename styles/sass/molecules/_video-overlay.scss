@@ -3,6 +3,10 @@
   z-index: 9;
   height: 1920px;
   width: 100%;
+  max-width: 1080px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
   &:after {
     content: '';
     position: absolute;
@@ -10,7 +14,7 @@
     bottom: 0;
     width: 1080px;
     z-index: 8;
-    background: $dark;
+    background: linear-gradient(to bottom, $attract-light, $attract-dark);
   }
 }
 
@@ -38,12 +42,11 @@
   &:after {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);    
-    height: 45%;         
+    transform: translateY(-50%);
+    height: 45%;
     transition: all 1s linear;
     transform-style: preserve-3d;
   }
-  
   &:before {
     content: '';
     background: url(../../../images/factory-door-left.png) no-repeat center center transparent;
@@ -52,7 +55,6 @@
     z-index: 10;
     background-size: 100%;
   }
-  
   &:after {
     content: '';
     background: url(../../../images/factory-door-right.png) no-repeat center center transparent;
@@ -67,7 +69,6 @@
   &:after {
     right: 0;
   }
-  
   &:before {
     left: 0;
   }
@@ -92,5 +93,4 @@
   100% {
     transform: rotateX(0);
   }
-  
 }

@@ -2,6 +2,9 @@
   position: absolute;
   z-index: 9;
   height: 1920px;
+  width: 1080px;
+  left: 50%;
+  transform: translateX(-50%);
   &:after {
     content: '';
     position: absolute;
